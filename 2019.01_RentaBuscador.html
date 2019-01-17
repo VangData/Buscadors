@@ -1,0 +1,3277 @@
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" lang="es" xml:lang="es">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+	<style>
+			@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');			
+			h3 {
+        	font-family: OpenSans-Semibold, Open Sans;
+        	font-weight:600;
+        	font-size: 25 px;
+        	fill: #323232;
+     	}
+	</style>
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></script>
+	<script type="text/javascript" language="javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.rawgit.com/duroty/responsive/master/app.embed.js"></script>
+	<script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
+	<script type="text/javascript" class="init">
+$(document).ready(function() {
+	$('#example').DataTable( {
+		"pageLength": 15,
+		"bLengthChange" : false,
+		"order": [ 1, "desc" ],
+		"language": {
+			"decimal": ",",
+			"thousands":".",
+            "lengthMenu": "Mostrando _MENU_ registros por página",
+            "zeroRecords": "No hay ningún resultado",
+            "info": "Mostrando página _PAGE_ de _PAGES_",
+            "infoEmpty": "No hay ningún resultado",
+            "search":         "Buscar:",
+            "infoFiltered": "(Filtrado de _MAX_ registros)",
+            "paginate": {
+        "first":      "Primera",
+        "last":       "Última",
+        "next":       "Siguiente",
+        "previous":   "Previa"
+    }
+        }
+        
+	});
+} );
+	</script>
+<table id="example" class="table display compact table-hover table-sm" style="width:100%">
+<h3>Renta media de los de los distritos de las mayores ciudades</h3>
+<thead><tr><th title="Field #1">Renta Media</th>
+<th title="Field #2">Municipio</th>
+<th title="Field #3">Código</th>
+<th title="Field #4">Distrito</th>
+<tbody><tr>
+<td align="right">28884</td>
+<td>Alicante</td>
+<td align="right">03001</td>
+<td>Centro</td>
+</tr>
+<tr>
+<td align="right">23438</td>
+<td>Alicante</td>
+<td align="right">03002</td>
+<td>Casco Antiguo</td>
+</tr>
+<tr>
+<td align="right">30211</td>
+<td>Alicante</td>
+<td align="right">03003</td>
+<td>Ensanche</td>
+</tr>
+<tr>
+<td align="right">22788</td>
+<td>Alicante</td>
+<td align="right">03004</td>
+<td>San Antón</td>
+</tr>
+<tr>
+<td align="right">22027</td>
+<td>Alicante</td>
+<td align="right">03005</td>
+<td>Polígono de San Blas</td>
+</tr>
+<tr>
+<td align="right">17480</td>
+<td>Alicante</td>
+<td align="right">03006</td>
+<td>Florida-Portazgo</td>
+</tr>
+<tr>
+<td align="right">19751</td>
+<td>Alicante</td>
+<td align="right">03007</td>
+<td>Polígono de Babel</td>
+</tr>
+<tr>
+<td align="right">21952</td>
+<td>Alicante</td>
+<td align="right">03008</td>
+<td>Puerto de Alicante-El Palmeral</td>
+</tr>
+<tr>
+<td align="right">16858</td>
+<td>Alicante</td>
+<td align="right">03009</td>
+<td>Los Ángeles-Campoamor</td>
+</tr>
+<tr>
+<td align="right">17814</td>
+<td>Alicante</td>
+<td align="right">03010</td>
+<td>Altozano</td>
+</tr>
+<tr>
+<td align="right">14945</td>
+<td>Alicante</td>
+<td align="right">03011</td>
+<td>Ciudad Jardín</td>
+</tr>
+<tr>
+<td align="right">16175</td>
+<td>Alicante</td>
+<td align="right">03012</td>
+<td>Carolinas</td>
+</tr>
+<tr>
+<td align="right">17771</td>
+<td>Alicante</td>
+<td align="right">03013</td>
+<td>Repós</td>
+</tr>
+<tr>
+<td align="right">17652</td>
+<td>Alicante</td>
+<td align="right">03014</td>
+<td>Nou Alacant</td>
+</tr>
+<tr>
+<td align="right">20609</td>
+<td>Alicante</td>
+<td align="right">03015</td>
+<td>Parque de Las Avenidas-Vistahermosa</td>
+</tr>
+<tr>
+<td align="right">24888</td>
+<td>Alicante</td>
+<td align="right">03016</td>
+<td>La Goteta-La Cantera</td>
+</tr>
+<tr>
+<td align="right">17134</td>
+<td>Alicante</td>
+<td align="right">03112</td>
+<td>Villafranqueza</td>
+</tr>
+<tr>
+<td align="right">18584</td>
+<td>Elche</td>
+<td align="right">03195</td>
+<td>L Altet-Els Bassars</td>
+</tr>
+<tr>
+<td align="right">17332</td>
+<td>Elche</td>
+<td align="right">03201</td>
+<td>Plá de Sant Josép-Pont Nou</td>
+</tr>
+<tr>
+<td align="right">19042</td>
+<td>Elche</td>
+<td align="right">03202</td>
+<td>Altabix-Ciutat Esportiva</td>
+</tr>
+<tr>
+<td align="right">20259</td>
+<td>Elche</td>
+<td align="right">03203</td>
+<td>Parque industrial</td>
+</tr>
+<tr>
+<td align="right">15085</td>
+<td>Elche</td>
+<td align="right">03204</td>
+<td>Sector 5º-El Asilo-El Canal</td>
+</tr>
+<tr>
+<td align="right">14218</td>
+<td>Elche</td>
+<td align="right">03205</td>
+<td>Altamira-El Toscar</td>
+</tr>
+<tr>
+<td align="right">13286</td>
+<td>Elche</td>
+<td align="right">03206</td>
+<td>Carrús-Pza. Barcelona</td>
+</tr>
+<tr>
+<td align="right">17777</td>
+<td>Elche</td>
+<td align="right">03291</td>
+<td>Altabix</td>
+</tr>
+<tr>
+<td align="right">17849</td>
+<td>Elche</td>
+<td align="right">03292</td>
+<td>Las Baias</td>
+</tr>
+<tr>
+<td align="right">15727</td>
+<td>Elche</td>
+<td align="right">03294</td>
+<td>La Foia</td>
+</tr>
+<tr>
+<td align="right">19789</td>
+<td>Elche</td>
+<td align="right">03295</td>
+<td>Les Selades-Jubalcoy-Maitino-Perleta</td>
+</tr>
+<tr>
+<td align="right">17710</td>
+<td>Elche</td>
+<td align="right">03296</td>
+<td>Matola-Algoda</td>
+</tr>
+<tr>
+<td align="right">17135</td>
+<td>Elche</td>
+<td align="right">03320</td>
+<td>Torrellano</td>
+</tr>
+<tr>
+<td align="right">29104</td>
+<td>Alicante</td>
+<td align="right">03540</td>
+<td>Playa de San Juan</td>
+</tr>
+<tr>
+<td align="right">18267</td>
+<td>Alicante</td>
+<td align="right">03699</td>
+<td>Moralet</td>
+</tr>
+<tr>
+<td align="right">38702</td>
+<td>Palma de Mallorca</td>
+<td align="right">07001</td>
+<td>Monti-Sion</td>
+</tr>
+<tr>
+<td align="right">30514</td>
+<td>Palma de Mallorca</td>
+<td align="right">07002</td>
+<td>Centro-Mercat</td>
+</tr>
+<tr>
+<td align="right">27717</td>
+<td>Palma de Mallorca</td>
+<td align="right">07003</td>
+<td>Centro-Sant Jaume</td>
+</tr>
+<tr>
+<td align="right">22043</td>
+<td>Palma de Mallorca</td>
+<td align="right">07004</td>
+<td>Son Oliva</td>
+</tr>
+<tr>
+<td align="right">20038</td>
+<td>Palma de Mallorca</td>
+<td align="right">07005</td>
+<td>Pere Garau</td>
+</tr>
+<tr>
+<td align="right">23214</td>
+<td>Palma de Mallorca</td>
+<td align="right">07006</td>
+<td>Es Portixol</td>
+</tr>
+<tr>
+<td align="right">19683</td>
+<td>Palma de Mallorca</td>
+<td align="right">07007</td>
+<td>Coll D En Rabassa</td>
+</tr>
+<tr>
+<td align="right">18159</td>
+<td>Palma de Mallorca</td>
+<td align="right">07008</td>
+<td>Son Canals</td>
+</tr>
+<tr>
+<td align="right">18994</td>
+<td>Palma de Mallorca</td>
+<td align="right">07009</td>
+<td>Son Cladera</td>
+</tr>
+<tr>
+<td align="right">22836</td>
+<td>Palma de Mallorca</td>
+<td align="right">07010</td>
+<td>Cas Capiscol</td>
+</tr>
+<tr>
+<td align="right">22356</td>
+<td>Palma de Mallorca</td>
+<td align="right">07011</td>
+<td>El Fortí-Son Ximelis</td>
+</tr>
+<tr>
+<td align="right">40166</td>
+<td>Palma de Mallorca</td>
+<td align="right">07012</td>
+<td>San Jaume</td>
+</tr>
+<tr>
+<td align="right">25753</td>
+<td>Palma de Mallorca</td>
+<td align="right">07013</td>
+<td>Son Rapinya</td>
+</tr>
+<tr>
+<td align="right">32239</td>
+<td>Palma de Mallorca</td>
+<td align="right">07014</td>
+<td>Son Dureta</td>
+</tr>
+<tr>
+<td align="right">24780</td>
+<td>Palma de Mallorca</td>
+<td align="right">07120</td>
+<td>Son Sardina</td>
+</tr>
+<tr>
+<td align="right">21065</td>
+<td>Palma de Mallorca</td>
+<td align="right">07198</td>
+<td>Son Ferriol</td>
+</tr>
+<tr>
+<td align="right">20017</td>
+<td>Palma de Mallorca</td>
+<td align="right">07199</td>
+<td>Llevant</td>
+</tr>
+<tr>
+<td align="right">25671</td>
+<td>Palma de Mallorca</td>
+<td align="right">07610</td>
+<td>Can Pastilla</td>
+</tr>
+<tr>
+<td align="right">18427</td>
+<td>Barcelona</td>
+<td align="right">08001</td>
+<td>Ciutat Vella-El Raval</td>
+</tr>
+<tr>
+<td align="right">23816</td>
+<td>Barcelona</td>
+<td align="right">08002</td>
+<td>Barrio Gótico</td>
+</tr>
+<tr>
+<td align="right">23951</td>
+<td>Barcelona</td>
+<td align="right">08003</td>
+<td>Barceloneta y Sant Pere</td>
+</tr>
+<tr>
+<td align="right">21326</td>
+<td>Barcelona</td>
+<td align="right">08004</td>
+<td>Pueblo Seco</td>
+</tr>
+<tr>
+<td align="right">29414</td>
+<td>Barcelona</td>
+<td align="right">08005</td>
+<td>El Poblenou</td>
+</tr>
+<tr>
+<td align="right">40294</td>
+<td>Barcelona</td>
+<td align="right">08006</td>
+<td>Sant Gervasi</td>
+</tr>
+<tr>
+<td align="right">44479</td>
+<td>Barcelona</td>
+<td align="right">08007</td>
+<td>Passeig de Gràcia-Rambla de Catalunya</td>
+</tr>
+<tr>
+<td align="right">45849</td>
+<td>Barcelona</td>
+<td align="right">08008</td>
+<td>Diagonal-Provença</td>
+</tr>
+<tr>
+<td align="right">36132</td>
+<td>Barcelona</td>
+<td align="right">08009</td>
+<td>Dreta de L Eixample</td>
+</tr>
+<tr>
+<td align="right">37638</td>
+<td>Barcelona</td>
+<td align="right">08010</td>
+<td>Tetúan-Urquinaona</td>
+</tr>
+<tr>
+<td align="right">30094</td>
+<td>Barcelona</td>
+<td align="right">08011</td>
+<td>Urgel-Sant Antoni</td>
+</tr>
+<tr>
+<td align="right">26827</td>
+<td>Barcelona</td>
+<td align="right">08012</td>
+<td>Vila de Gracia</td>
+</tr>
+<tr>
+<td align="right">26862</td>
+<td>Barcelona</td>
+<td align="right">08013</td>
+<td>Glories Catalanes</td>
+</tr>
+<tr>
+<td align="right">24941</td>
+<td>Barcelona</td>
+<td align="right">08014</td>
+<td>Hostafrancs-Sants</td>
+</tr>
+<tr>
+<td align="right">27478</td>
+<td>Barcelona</td>
+<td align="right">08015</td>
+<td>Sant Antoni</td>
+</tr>
+<tr>
+<td align="right">20910</td>
+<td>Barcelona</td>
+<td align="right">08016</td>
+<td>La Prosperitat-Porta</td>
+</tr>
+<tr>
+<td align="right">65700</td>
+<td>Barcelona</td>
+<td align="right">08017</td>
+<td>Vallvidrera-Tibidabo i Les Planes</td>
+</tr>
+<tr>
+<td align="right">25699</td>
+<td>Barcelona</td>
+<td align="right">08018</td>
+<td>Sant Martí</td>
+</tr>
+<tr>
+<td align="right">25620</td>
+<td>Barcelona</td>
+<td align="right">08019</td>
+<td>Diagonal Mar i El Front Maritim Del Poblenou</td>
+</tr>
+<tr>
+<td align="right">21405</td>
+<td>Barcelona</td>
+<td align="right">08020</td>
+<td>La Verneda i La Pau</td>
+</tr>
+<tr>
+<td align="right">59498</td>
+<td>Barcelona</td>
+<td align="right">08021</td>
+<td>Muntaner</td>
+</tr>
+<tr>
+<td align="right">51397</td>
+<td>Barcelona</td>
+<td align="right">08022</td>
+<td>Sant Gervasi-La Bonanova</td>
+</tr>
+<tr>
+<td align="right">31860</td>
+<td>Barcelona</td>
+<td align="right">08023</td>
+<td>Vallcarca i Los Penitentes</td>
+</tr>
+<tr>
+<td align="right">27328</td>
+<td>Barcelona</td>
+<td align="right">08024</td>
+<td>Gracia-La Salud</td>
+</tr>
+<tr>
+<td align="right">26207</td>
+<td>Barcelona</td>
+<td align="right">08025</td>
+<td>Sagrada Familia</td>
+</tr>
+<tr>
+<td align="right">23781</td>
+<td>Barcelona</td>
+<td align="right">08026</td>
+<td>El Clot</td>
+</tr>
+<tr>
+<td align="right">23387</td>
+<td>Barcelona</td>
+<td align="right">08027</td>
+<td>La Sagrera</td>
+</tr>
+<tr>
+<td align="right">28629</td>
+<td>Barcelona</td>
+<td align="right">08028</td>
+<td>Les Corts</td>
+</tr>
+<tr>
+<td align="right">32212</td>
+<td>Barcelona</td>
+<td align="right">08029</td>
+<td>L Nou Esquerra de L Eixample</td>
+</tr>
+<tr>
+<td align="right">23603</td>
+<td>Barcelona</td>
+<td align="right">08030</td>
+<td>Sant Andreu-Bon Pastor</td>
+</tr>
+<tr>
+<td align="right">22330</td>
+<td>Barcelona</td>
+<td align="right">08031</td>
+<td>Vilapicina i La Torre Llobeta</td>
+</tr>
+<tr>
+<td align="right">22603</td>
+<td>Barcelona</td>
+<td align="right">08032</td>
+<td>El Carmelo-El Guinardó</td>
+</tr>
+<tr>
+<td align="right">17234</td>
+<td>Barcelona</td>
+<td align="right">08033</td>
+<td>Vallbona-Ciutat Meridiana-Torre Baro-Canyelles</td>
+</tr>
+<tr>
+<td align="right">57667</td>
+<td>Barcelona</td>
+<td align="right">08034</td>
+<td>Pedralbes-Sarriá</td>
+</tr>
+<tr>
+<td align="right">25705</td>
+<td>Barcelona</td>
+<td align="right">08035</td>
+<td>Sant Genís Dels Agudells-Vall D Hebrón-Horta</td>
+</tr>
+<tr>
+<td align="right">33589</td>
+<td>Barcelona</td>
+<td align="right">08036</td>
+<td>L Antiga Esquerra de L Eixample</td>
+</tr>
+<tr>
+<td align="right">33429</td>
+<td>Barcelona</td>
+<td align="right">08037</td>
+<td>Verdaguer-L Eixample</td>
+</tr>
+<tr>
+<td align="right">21921</td>
+<td>Barcelona</td>
+<td align="right">08038</td>
+<td>Sants- Montjuic-La Marina de Port</td>
+</tr>
+<tr>
+<td align="right">25231</td>
+<td>Barcelona</td>
+<td align="right">08041</td>
+<td>Guinardó i Hospital de Sant Pau</td>
+</tr>
+<tr>
+<td align="right">20520</td>
+<td>Barcelona</td>
+<td align="right">08042</td>
+<td>La Guineueta-Verdún</td>
+</tr>
+<tr>
+<td align="right">29965</td>
+<td>Sabadell</td>
+<td align="right">08201</td>
+<td>Centre</td>
+</tr>
+<tr>
+<td align="right">26843</td>
+<td>Sabadell</td>
+<td align="right">08202</td>
+<td>Torre-Romeu-El Poblenou</td>
+</tr>
+<tr>
+<td align="right">22625</td>
+<td>Sabadell</td>
+<td align="right">08203</td>
+<td>Montserrat Roig-María Mercé Marçal-Montevideo</td>
+</tr>
+<tr>
+<td align="right">18621</td>
+<td>Sabadell</td>
+<td align="right">08204</td>
+<td>Margarida Xirgu-Consol Oromir-Triana-Sant Pius X</td>
+</tr>
+<tr>
+<td align="right">22490</td>
+<td>Sabadell</td>
+<td align="right">08205</td>
+<td>Gracia-Aeropuerto</td>
+</tr>
+<tr>
+<td align="right">21603</td>
+<td>Sabadell</td>
+<td align="right">08206</td>
+<td>Parque Odessa-Parque Catalunya</td>
+</tr>
+<tr>
+<td align="right">19067</td>
+<td>Sabadell</td>
+<td align="right">08207</td>
+<td>Matadepera</td>
+</tr>
+<tr>
+<td align="right">23552</td>
+<td>Sabadell</td>
+<td align="right">08208</td>
+<td>Creu Alta-Can Puig Gener</td>
+</tr>
+<tr>
+<td align="right">29333</td>
+<td>Terrassa</td>
+<td align="right">08221</td>
+<td>El Centre</td>
+</tr>
+<tr>
+<td align="right">20835</td>
+<td>Terrassa</td>
+<td align="right">08222</td>
+<td>Valparadis</td>
+</tr>
+<tr>
+<td align="right">20055</td>
+<td>Terrassa</td>
+<td align="right">08223</td>
+<td>Segle X</td>
+</tr>
+<tr>
+<td align="right">22653</td>
+<td>Terrassa</td>
+<td align="right">08224</td>
+<td>La Cogallura-Vista Alegre</td>
+</tr>
+<tr>
+<td align="right">21636</td>
+<td>Terrassa</td>
+<td align="right">08225</td>
+<td>Placita Del Bon Aire-Can Roca-Poble Nou</td>
+</tr>
+<tr>
+<td align="right">19364</td>
+<td>Terrassa</td>
+<td align="right">08226</td>
+<td>Can Tussel</td>
+</tr>
+<tr>
+<td align="right">19044</td>
+<td>Terrassa</td>
+<td align="right">08227</td>
+<td>Can Montlior-Els Bellots</td>
+</tr>
+<tr>
+<td align="right">20807</td>
+<td>Terrassa</td>
+<td align="right">08228</td>
+<td>P.I. Can Perellada-Perellada</td>
+</tr>
+<tr>
+<td align="right">22275</td>
+<td>Hospitalet de Llobregat</td>
+<td align="right">08901</td>
+<td>Centre-Sant Josép</td>
+</tr>
+<tr>
+<td align="right">21917</td>
+<td>Hospitalet de Llobregat</td>
+<td align="right">08902</td>
+<td>Santa Eulalia-El Gornal</td>
+</tr>
+<tr>
+<td align="right">19529</td>
+<td>Hospitalet de Llobregat</td>
+<td align="right">08903</td>
+<td>La Torrassa</td>
+</tr>
+<tr>
+<td align="right">18834</td>
+<td>Hospitalet de Llobregat</td>
+<td align="right">08904</td>
+<td>Collblanc</td>
+</tr>
+<tr>
+<td align="right">17747</td>
+<td>Hospitalet de Llobregat</td>
+<td align="right">08905</td>
+<td>La Florida-Les Planes</td>
+</tr>
+<tr>
+<td align="right">18703</td>
+<td>Hospitalet de Llobregat</td>
+<td align="right">08906</td>
+<td>Pubilla Cases-Can Serra-San Feliú</td>
+</tr>
+<tr>
+<td align="right">20454</td>
+<td>Hospitalet de Llobregat</td>
+<td align="right">08907</td>
+<td>Bellvitge-Centre</td>
+</tr>
+<tr>
+<td align="right">23269</td>
+<td>Hospitalet de Llobregat</td>
+<td align="right">08908</td>
+<td>Bellvitge-Gran Vía Sud</td>
+</tr>
+<tr>
+<td align="right">27345</td>
+<td>Badalona</td>
+<td align="right">08911</td>
+<td>Casagemes</td>
+</tr>
+<tr>
+<td align="right">25097</td>
+<td>Badalona</td>
+<td align="right">08912</td>
+<td>Badalona</td>
+</tr>
+<tr>
+<td align="right">18682</td>
+<td>Badalona</td>
+<td align="right">08913</td>
+<td>La Salut</td>
+</tr>
+<tr>
+<td align="right">17940</td>
+<td>Badalona</td>
+<td align="right">08914</td>
+<td>Centro</td>
+</tr>
+<tr>
+<td align="right">20962</td>
+<td>Badalona</td>
+<td align="right">08915</td>
+<td>Morera</td>
+</tr>
+<tr>
+<td align="right">43557</td>
+<td>Badalona</td>
+<td align="right">08916</td>
+<td>Mas Ram</td>
+</tr>
+<tr>
+<td align="right">20384</td>
+<td>Badalona</td>
+<td align="right">08917</td>
+<td>Montigala</td>
+</tr>
+<tr>
+<td align="right">17476</td>
+<td>Badalona</td>
+<td align="right">08918</td>
+<td>Sant Roc</td>
+</tr>
+<tr>
+<td align="right">22809</td>
+<td>Burgos</td>
+<td align="right">09001</td>
+<td>Universidad Campus San Amaro</td>
+</tr>
+<tr>
+<td align="right">21972</td>
+<td>Burgos</td>
+<td align="right">09002</td>
+<td>Museo de La Evolución Humana-Carretera Madrid-Irun</td>
+</tr>
+<tr>
+<td align="right">21932</td>
+<td>Burgos</td>
+<td align="right">09003</td>
+<td>Catedral de Burgos</td>
+</tr>
+<tr>
+<td align="right">27126</td>
+<td>Burgos</td>
+<td align="right">09004</td>
+<td>Plaza de La Libertad-Av. Arlanzón</td>
+</tr>
+<tr>
+<td align="right">22901</td>
+<td>Burgos</td>
+<td align="right">09005</td>
+<td>Plaza de España-Plaza Francisco Sarmiento</td>
+</tr>
+<tr>
+<td align="right">23084</td>
+<td>Burgos</td>
+<td align="right">09006</td>
+<td>Villatoro-Cementerio San José</td>
+</tr>
+<tr>
+<td align="right">19281</td>
+<td>Burgos</td>
+<td align="right">09007</td>
+<td>San Cristóbal-Gamonal</td>
+</tr>
+<tr>
+<td align="right">15427</td>
+<td>Jerez de la Frontera</td>
+<td align="right">11400</td>
+<td>Las Pachecas-El Mojo-Los Isletes</td>
+</tr>
+<tr>
+<td align="right">19017</td>
+<td>Jerez de la Frontera</td>
+<td align="right">11401</td>
+<td>Sur</td>
+</tr>
+<tr>
+<td align="right">24292</td>
+<td>Jerez de la Frontera</td>
+<td align="right">11402</td>
+<td>Centro</td>
+</tr>
+<tr>
+<td align="right">21552</td>
+<td>Jerez de la Frontera</td>
+<td align="right">11403</td>
+<td>Centro-Catedral San Salvador-Alcázar</td>
+</tr>
+<tr>
+<td align="right">16987</td>
+<td>Jerez de la Frontera</td>
+<td align="right">11404</td>
+<td>Hospital de Jerez</td>
+</tr>
+<tr>
+<td align="right">21249</td>
+<td>Jerez de la Frontera</td>
+<td align="right">11405</td>
+<td>Norte-Noreste-Granja</td>
+</tr>
+<tr>
+<td align="right">18299</td>
+<td>Jerez de la Frontera</td>
+<td align="right">11406</td>
+<td>Este-Delicias</td>
+</tr>
+<tr>
+<td align="right">23359</td>
+<td>Jerez de la Frontera</td>
+<td align="right">11407</td>
+<td>Centro</td>
+</tr>
+<tr>
+<td align="right">16902</td>
+<td>Jerez de la Frontera</td>
+<td align="right">11408</td>
+<td>Oeste-Centro</td>
+</tr>
+<tr>
+<td align="right">14199</td>
+<td>Jerez de la Frontera</td>
+<td align="right">11570</td>
+<td>Garrapilos</td>
+</tr>
+<tr>
+<td align="right">15441</td>
+<td>Jerez de la Frontera</td>
+<td align="right">11591</td>
+<td>Guadalcacín</td>
+</tr>
+<tr>
+<td align="right">24304</td>
+<td>Córdoba</td>
+<td align="right">14001</td>
+<td>Ollerías-Sta Marina-San Lorenzo</td>
+</tr>
+<tr>
+<td align="right">21244</td>
+<td>Córdoba</td>
+<td align="right">14002</td>
+<td>San Pedro-Santiago-La Magdalena</td>
+</tr>
+<tr>
+<td align="right">24800</td>
+<td>Córdoba</td>
+<td align="right">14003</td>
+<td>Catedral-San Francisco</td>
+</tr>
+<tr>
+<td align="right">23289</td>
+<td>Córdoba</td>
+<td align="right">14004</td>
+<td>San Basilio-Parque Cruz Conde-Alameda Del Obispo</td>
+</tr>
+<tr>
+<td align="right">21440</td>
+<td>Córdoba</td>
+<td align="right">14005</td>
+<td>Miralbaida-Palmeras</td>
+</tr>
+<tr>
+<td align="right">20594</td>
+<td>Córdoba</td>
+<td align="right">14006</td>
+<td>Valdeolleros-Huerta La Reina</td>
+</tr>
+<tr>
+<td align="right">17280</td>
+<td>Córdoba</td>
+<td align="right">14007</td>
+<td>Levante</td>
+</tr>
+<tr>
+<td align="right">29419</td>
+<td>Córdoba</td>
+<td align="right">14008</td>
+<td>Centro-Avenida de América</td>
+</tr>
+<tr>
+<td align="right">16854</td>
+<td>Córdoba</td>
+<td align="right">14009</td>
+<td>Fray Albino</td>
+</tr>
+<tr>
+<td align="right">16567</td>
+<td>Córdoba</td>
+<td align="right">14010</td>
+<td>Fuensanta-El Arcángel</td>
+</tr>
+<tr>
+<td align="right">21550</td>
+<td>Córdoba</td>
+<td align="right">14011</td>
+<td>El Tablero</td>
+</tr>
+<tr>
+<td align="right">29520</td>
+<td>Córdoba</td>
+<td align="right">14012</td>
+<td>El Brillante-Quitapesares</td>
+</tr>
+<tr>
+<td align="right">14730</td>
+<td>Córdoba</td>
+<td align="right">14013</td>
+<td>Sector Sur-Polígono Del Guadalquivir</td>
+</tr>
+<tr>
+<td align="right">17621</td>
+<td>Córdoba</td>
+<td align="right">14014</td>
+<td>Fátima-Parque Fidiana-Cañero</td>
+</tr>
+<tr>
+<td align="right">15917</td>
+<td>Córdoba</td>
+<td align="right">14193</td>
+<td>Alameda Del Obispo</td>
+</tr>
+<tr>
+<td align="right">17635</td>
+<td>Córdoba</td>
+<td align="right">14610</td>
+<td>Alcolea</td>
+</tr>
+<tr>
+<td align="right">16475</td>
+<td>Córdoba</td>
+<td align="right">14710</td>
+<td>Extrarradio (Villarrubia)</td>
+</tr>
+<tr>
+<td align="right">25509</td>
+<td>A Coruña</td>
+<td align="right">15001</td>
+<td>Ciudad Vieja-Centro</td>
+</tr>
+<tr>
+<td align="right">21913</td>
+<td>A Coruña</td>
+<td align="right">15002</td>
+<td>Monte Alot-Zalaeta-Atocha</td>
+</tr>
+<tr>
+<td align="right">28946</td>
+<td>A Coruña</td>
+<td align="right">15003</td>
+<td>Ensanche</td>
+</tr>
+<tr>
+<td align="right">35438</td>
+<td>A Coruña</td>
+<td align="right">15004</td>
+<td>Juan Flórez-San Pablo</td>
+</tr>
+<tr>
+<td align="right">27630</td>
+<td>A Coruña</td>
+<td align="right">15005</td>
+<td>Falperra-Santa Lucía-Paseo de Los Puentes-Sta Margarita</td>
+</tr>
+<tr>
+<td align="right">23450</td>
+<td>A Coruña</td>
+<td align="right">15006</td>
+<td>Los Castros-Castrillón</td>
+</tr>
+<tr>
+<td align="right">18756</td>
+<td>A Coruña</td>
+<td align="right">15007</td>
+<td>Os Mallos</td>
+</tr>
+<tr>
+<td align="right">21926</td>
+<td>A Coruña</td>
+<td align="right">15008</td>
+<td>Sagrada Familia-Vioño</td>
+</tr>
+<tr>
+<td align="right">21678</td>
+<td>A Coruña</td>
+<td align="right">15009</td>
+<td>Los Castros-Castrillón</td>
+</tr>
+<tr>
+<td align="right">18606</td>
+<td>A Coruña</td>
+<td align="right">15010</td>
+<td>Agrán Del Orzán-Ventorrillo</td>
+</tr>
+<tr>
+<td align="right">22097</td>
+<td>A Coruña</td>
+<td align="right">15011</td>
+<td>Riazor-Los Rosales</td>
+</tr>
+<tr>
+<td align="right">19754</td>
+<td>A Coruña</td>
+<td align="right">15190</td>
+<td>Mesoiro</td>
+</tr>
+<tr>
+<td align="right">25378</td>
+<td>Granada</td>
+<td align="right">18001</td>
+<td>Centro</td>
+</tr>
+<tr>
+<td align="right">26909</td>
+<td>Granada</td>
+<td align="right">18002</td>
+<td>Centro</td>
+</tr>
+<tr>
+<td align="right">23813</td>
+<td>Granada</td>
+<td align="right">18003</td>
+<td>Ronda</td>
+</tr>
+<tr>
+<td align="right">24753</td>
+<td>Granada</td>
+<td align="right">18004</td>
+<td>Ronda-Arabial</td>
+</tr>
+<tr>
+<td align="right">26027</td>
+<td>Granada</td>
+<td align="right">18005</td>
+<td>San Antón</td>
+</tr>
+<tr>
+<td align="right">23004</td>
+<td>Granada</td>
+<td align="right">18006</td>
+<td>Figares-Ciudad Jardín</td>
+</tr>
+<tr>
+<td align="right">17616</td>
+<td>Granada</td>
+<td align="right">18007</td>
+<td>Zaidín-Vergeles</td>
+</tr>
+<tr>
+<td align="right">23990</td>
+<td>Granada</td>
+<td align="right">18008</td>
+<td>Cervantes-Palacio de Deportes-Bola de Oro-Carretera Sierra</td>
+</tr>
+<tr>
+<td align="right">25871</td>
+<td>Granada</td>
+<td align="right">18009</td>
+<td>Realejo</td>
+</tr>
+<tr>
+<td align="right">22685</td>
+<td>Granada</td>
+<td align="right">18010</td>
+<td>Albaicín-Sacromonte</td>
+</tr>
+<tr>
+<td align="right">17029</td>
+<td>Granada</td>
+<td align="right">18011</td>
+<td>Norte-Beiro</td>
+</tr>
+<tr>
+<td align="right">26113</td>
+<td>Granada</td>
+<td align="right">18012</td>
+<td>Plaza de Toros-Doctores San Lázaro</td>
+</tr>
+<tr>
+<td align="right">18867</td>
+<td>Granada</td>
+<td align="right">18013</td>
+<td>Polígono de Almanjáyar-Joaquina Eguaras Sur</td>
+</tr>
+<tr>
+<td align="right">24767</td>
+<td>Granada</td>
+<td align="right">18014</td>
+<td>Barrio de Los Periodistas</td>
+</tr>
+<tr>
+<td align="right">19321</td>
+<td>Granada</td>
+<td align="right">18015</td>
+<td>La Chana</td>
+</tr>
+<tr>
+<td align="right">61562</td>
+<td>Madrid</td>
+<td align="right">28001</td>
+<td>Salamanca- Goya</td>
+</tr>
+<tr>
+<td align="right">39717</td>
+<td>Madrid</td>
+<td align="right">28002</td>
+<td>Chamartín</td>
+</tr>
+<tr>
+<td align="right">38353</td>
+<td>Madrid</td>
+<td align="right">28003</td>
+<td>Chamberí-Rios Rosas</td>
+</tr>
+<tr>
+<td align="right">31023</td>
+<td>Madrid</td>
+<td align="right">28004</td>
+<td>Justicia</td>
+</tr>
+<tr>
+<td align="right">28477</td>
+<td>Madrid</td>
+<td align="right">28005</td>
+<td>Arganzuela</td>
+</tr>
+<tr>
+<td align="right">56011</td>
+<td>Madrid</td>
+<td align="right">28006</td>
+<td>Castellana</td>
+</tr>
+<tr>
+<td align="right">32635</td>
+<td>Madrid</td>
+<td align="right">28007</td>
+<td>Adelfas</td>
+</tr>
+<tr>
+<td align="right">37622</td>
+<td>Madrid</td>
+<td align="right">28008</td>
+<td>Moncloa</td>
+</tr>
+<tr>
+<td align="right">38592</td>
+<td>Madrid</td>
+<td align="right">28009</td>
+<td>Ibiza-Niño Jesús</td>
+</tr>
+<tr>
+<td align="right">46773</td>
+<td>Madrid</td>
+<td align="right">28010</td>
+<td>Almagro</td>
+</tr>
+<tr>
+<td align="right">22192</td>
+<td>Madrid</td>
+<td align="right">28011</td>
+<td>Latina</td>
+</tr>
+<tr>
+<td align="right">23293</td>
+<td>Madrid</td>
+<td align="right">28012</td>
+<td>Embajadores</td>
+</tr>
+<tr>
+<td align="right">32467</td>
+<td>Madrid</td>
+<td align="right">28013</td>
+<td>Centro</td>
+</tr>
+<tr>
+<td align="right">47300</td>
+<td>Madrid</td>
+<td align="right">28014</td>
+<td>Retiro</td>
+</tr>
+<tr>
+<td align="right">31634</td>
+<td>Madrid</td>
+<td align="right">28015</td>
+<td>Universidad</td>
+</tr>
+<tr>
+<td align="right">44763</td>
+<td>Madrid</td>
+<td align="right">28016</td>
+<td>Hispanoamerica-Costillares</td>
+</tr>
+<tr>
+<td align="right">21178</td>
+<td>Madrid</td>
+<td align="right">28017</td>
+<td>Ventas-Ciudad Lineal-La Elipa</td>
+</tr>
+<tr>
+<td align="right">19378</td>
+<td>Madrid</td>
+<td align="right">28018</td>
+<td>Palomeras</td>
+</tr>
+<tr>
+<td align="right">20941</td>
+<td>Madrid</td>
+<td align="right">28019</td>
+<td>Opañel-Comillas-San Isidro</td>
+</tr>
+<tr>
+<td align="right">32433</td>
+<td>Madrid</td>
+<td align="right">28020</td>
+<td>Valdeacederas</td>
+</tr>
+<tr>
+<td align="right">19208</td>
+<td>Madrid</td>
+<td align="right">28021</td>
+<td>Villaverde-S. Cristóbal de Los Ángeles</td>
+</tr>
+<tr>
+<td align="right">25833</td>
+<td>Madrid</td>
+<td align="right">28022</td>
+<td>San Blas</td>
+</tr>
+<tr>
+<td align="right">61476</td>
+<td>Madrid</td>
+<td align="right">28023</td>
+<td>Aravaca</td>
+</tr>
+<tr>
+<td align="right">22051</td>
+<td>Madrid</td>
+<td align="right">28024</td>
+<td>Campamento</td>
+</tr>
+<tr>
+<td align="right">19871</td>
+<td>Madrid</td>
+<td align="right">28025</td>
+<td>Carabanchel-Abrantes</td>
+</tr>
+<tr>
+<td align="right">19424</td>
+<td>Madrid</td>
+<td align="right">28026</td>
+<td>Usera</td>
+</tr>
+<tr>
+<td align="right">28171</td>
+<td>Madrid</td>
+<td align="right">28027</td>
+<td>San Juan Bautista</td>
+</tr>
+<tr>
+<td align="right">31283</td>
+<td>Madrid</td>
+<td align="right">28028</td>
+<td>Guindalera-Fuente El Berro</td>
+</tr>
+<tr>
+<td align="right">25310</td>
+<td>Madrid</td>
+<td align="right">28029</td>
+<td>Tetuán-Barrio Del Pilar</td>
+</tr>
+<tr>
+<td align="right">24109</td>
+<td>Madrid</td>
+<td align="right">28030</td>
+<td>Moratalaz</td>
+</tr>
+<tr>
+<td align="right">21359</td>
+<td>Madrid</td>
+<td align="right">28031</td>
+<td>Villa Vallecas-Santa Eugenia</td>
+</tr>
+<tr>
+<td align="right">23300</td>
+<td>Madrid</td>
+<td align="right">28032</td>
+<td>Vicalvaro- Valdebernardo</td>
+</tr>
+<tr>
+<td align="right">30814</td>
+<td>Madrid</td>
+<td align="right">28033</td>
+<td>Hortaleza-Pinar Del Rey</td>
+</tr>
+<tr>
+<td align="right">35794</td>
+<td>Madrid</td>
+<td align="right">28034</td>
+<td>Tres Olivos</td>
+</tr>
+<tr>
+<td align="right">36208</td>
+<td>Madrid</td>
+<td align="right">28035</td>
+<td>Fuencarral</td>
+</tr>
+<tr>
+<td align="right">56705</td>
+<td>Madrid</td>
+<td align="right">28036</td>
+<td>Nueva España</td>
+</tr>
+<tr>
+<td align="right">21503</td>
+<td>Madrid</td>
+<td align="right">28037</td>
+<td>San Blas</td>
+</tr>
+<tr>
+<td align="right">18919</td>
+<td>Madrid</td>
+<td align="right">28038</td>
+<td>Pavones</td>
+</tr>
+<tr>
+<td align="right">23138</td>
+<td>Madrid</td>
+<td align="right">28039</td>
+<td>Bellas Vistas-Valdeacederas</td>
+</tr>
+<tr>
+<td align="right">39367</td>
+<td>Madrid</td>
+<td align="right">28040</td>
+<td>Ciudad Universitaria</td>
+</tr>
+<tr>
+<td align="right">20158</td>
+<td>Madrid</td>
+<td align="right">28041</td>
+<td>Orcasitas-San Fermín</td>
+</tr>
+<tr>
+<td align="right">34173</td>
+<td>Madrid</td>
+<td align="right">28042</td>
+<td>Barajas-La Alameda de Osuna</td>
+</tr>
+<tr>
+<td align="right">37257</td>
+<td>Madrid</td>
+<td align="right">28043</td>
+<td>Hortaleza-Canillas</td>
+</tr>
+<tr>
+<td align="right">20798</td>
+<td>Madrid</td>
+<td align="right">28044</td>
+<td>Cuatrovientos</td>
+</tr>
+<tr>
+<td align="right">27488</td>
+<td>Madrid</td>
+<td align="right">28045</td>
+<td>Delicias</td>
+</tr>
+<tr>
+<td align="right">52818</td>
+<td>Madrid</td>
+<td align="right">28046</td>
+<td>Castilla -Chamartín</td>
+</tr>
+<tr>
+<td align="right">21588</td>
+<td>Madrid</td>
+<td align="right">28047</td>
+<td>Aluche-Vista Alegre</td>
+</tr>
+<tr>
+<td align="right">24324</td>
+<td>Madrid</td>
+<td align="right">28048</td>
+<td>Fuencarral El Pardo</td>
+</tr>
+<tr>
+<td align="right">38911</td>
+<td>Madrid</td>
+<td align="right">28049</td>
+<td>El Goloso</td>
+</tr>
+<tr>
+<td align="right">37376</td>
+<td>Madrid</td>
+<td align="right">28050</td>
+<td>Las Tablas</td>
+</tr>
+<tr>
+<td align="right">24364</td>
+<td>Madrid</td>
+<td align="right">28051</td>
+<td>Villa de Vallecas</td>
+</tr>
+<tr>
+<td align="right">17476</td>
+<td>Madrid</td>
+<td align="right">28053</td>
+<td>Entrevías-Puente de Vallecas</td>
+</tr>
+<tr>
+<td align="right">25304</td>
+<td>Madrid</td>
+<td align="right">28054</td>
+<td>Buenavista-La Fortuna</td>
+</tr>
+<tr>
+<td align="right">45062</td>
+<td>Madrid</td>
+<td align="right">28055</td>
+<td>Valdebebas-Valdefuentes</td>
+</tr>
+<tr>
+<td align="right">25414</td>
+<td>Alcobendas</td>
+<td align="right">28100</td>
+<td>Valdelasfuentes</td>
+</tr>
+<tr>
+<td align="right">47689</td>
+<td>Alcobendas</td>
+<td align="right">28108</td>
+<td>La Granja-Campus Empresarial</td>
+</tr>
+<tr>
+<td align="right">113642</td>
+<td>Alcobendas</td>
+<td align="right">28109</td>
+<td>La Moraleja</td>
+</tr>
+<tr>
+<td align="right">62390</td>
+<td>Pozuelo de Alarcón</td>
+<td align="right">28223</td>
+<td>Somosaguas-Humera</td>
+</tr>
+<tr>
+<td align="right">42902</td>
+<td>Pozuelo de Alarcón</td>
+<td align="right">28224</td>
+<td>Pozuelo de Alarcón</td>
+</tr>
+<tr>
+<td align="right">31698</td>
+<td>Las Rozas</td>
+<td align="right">28231</td>
+<td>El Burgo</td>
+</tr>
+<tr>
+<td align="right">40333</td>
+<td>Las Rozas</td>
+<td align="right">28232</td>
+<td>La Chopera-Európolis</td>
+</tr>
+<tr>
+<td align="right">41052</td>
+<td>Las Rozas</td>
+<td align="right">28290</td>
+<td>Las Matas</td>
+</tr>
+<tr>
+<td align="right">23583</td>
+<td>Alcalá</td>
+<td align="right">28801</td>
+<td>Universidad de Alcalá</td>
+</tr>
+<tr>
+<td align="right">17242</td>
+<td>Alcalá</td>
+<td align="right">28802</td>
+<td>Museo Arquelógico Regional-Av. Madrid</td>
+</tr>
+<tr>
+<td align="right">19767</td>
+<td>Alcalá</td>
+<td align="right">28803</td>
+<td>Av Reyes Católicos-Calle Ronda Fiscal</td>
+</tr>
+<tr>
+<td align="right">21873</td>
+<td>Alcalá</td>
+<td align="right">28804</td>
+<td>Ciudad Deportiva Municipal Del Val-Av.Lope de Figueroa</td>
+</tr>
+<tr>
+<td align="right">23577</td>
+<td>Alcalá</td>
+<td align="right">28805</td>
+<td>Hospital Universitario-Centro Penitenciario</td>
+</tr>
+<tr>
+<td align="right">23951</td>
+<td>Alcalá</td>
+<td align="right">28806</td>
+<td>Polígonos Industriales</td>
+</tr>
+<tr>
+<td align="right">22392</td>
+<td>Alcalá</td>
+<td align="right">28807</td>
+<td>Estación</td>
+</tr>
+<tr>
+<td align="right">20727</td>
+<td>Getafe</td>
+<td align="right">28901</td>
+<td>Getafe Centro-San Isidro</td>
+</tr>
+<tr>
+<td align="right">22298</td>
+<td>Getafe</td>
+<td align="right">28902</td>
+<td>Getafe Centro</td>
+</tr>
+<tr>
+<td align="right">20573</td>
+<td>Getafe</td>
+<td align="right">28903</td>
+<td>Juan de la Cierva-Universidad</td>
+</tr>
+<tr>
+<td align="right">19374</td>
+<td>Getafe</td>
+<td align="right">28904</td>
+<td>Getafe Centro</td>
+</tr>
+<tr>
+<td align="right">24397</td>
+<td>Getafe</td>
+<td align="right">28905</td>
+<td>La Alhóndiga</td>
+</tr>
+<tr>
+<td align="right">22778</td>
+<td>Getafe</td>
+<td align="right">28906</td>
+<td>Los Olivos-Los Ángeles</td>
+</tr>
+<tr>
+<td align="right">26341</td>
+<td>Getafe</td>
+<td align="right">28907</td>
+<td>El Bercial</td>
+</tr>
+<tr>
+<td align="right">23807</td>
+<td>Getafe</td>
+<td align="right">28909</td>
+<td>Perales del Río</td>
+</tr>
+<tr>
+<td align="right">17674</td>
+<td>Móstoles</td>
+<td align="right">28931</td>
+<td>Av. Portugal-Parque Cuartel Huerta</td>
+</tr>
+<tr>
+<td align="right">21051</td>
+<td>Móstoles</td>
+<td align="right">28932</td>
+<td>Av. Alcalde Mostoles-Av. Portugal</td>
+</tr>
+<tr>
+<td align="right">21493</td>
+<td>Móstoles</td>
+<td align="right">28933</td>
+<td>A5-Av. Portugal</td>
+</tr>
+<tr>
+<td align="right">17864</td>
+<td>Móstoles</td>
+<td align="right">28934</td>
+<td>Casco Antiguo</td>
+</tr>
+<tr>
+<td align="right">21268</td>
+<td>Móstoles</td>
+<td align="right">28935</td>
+<td>Móstoles-El Soto</td>
+</tr>
+<tr>
+<td align="right">19366</td>
+<td>Móstoles</td>
+<td align="right">28936</td>
+<td>Av. Carlos V-Av. Onu-Osa Mayor</td>
+</tr>
+<tr>
+<td align="right">18585</td>
+<td>Móstoles</td>
+<td align="right">28937</td>
+<td>Ávila-Castellón-Libertad</td>
+</tr>
+<tr>
+<td align="right">19610</td>
+<td>Móstoles</td>
+<td align="right">28938</td>
+<td>P.I. Arroyomolinos-R5</td>
+</tr>
+<tr>
+<td align="right">27097</td>
+<td>Málaga</td>
+<td align="right">29001</td>
+<td>Ensanche Centro-Soho</td>
+</tr>
+<tr>
+<td align="right">21371</td>
+<td>Málaga</td>
+<td align="right">29002</td>
+<td>El Bulto-Jardín de La Abadía-La Princesa</td>
+</tr>
+<tr>
+<td align="right">16501</td>
+<td>Málaga</td>
+<td align="right">29003</td>
+<td>Barceló-El Torcal-Girón-Vistafranca-La Cordobesa</td>
+</tr>
+<tr>
+<td align="right">20521</td>
+<td>Málaga</td>
+<td align="right">29004</td>
+<td>Pol. Ind. Guadalhorce-Guadalmar-Carretera de Cádiz</td>
+</tr>
+<tr>
+<td align="right">27475</td>
+<td>Málaga</td>
+<td align="right">29005</td>
+<td>Centro Histórico</td>
+</tr>
+<tr>
+<td align="right">18079</td>
+<td>Málaga</td>
+<td align="right">29006</td>
+<td>Cruz de Humilladero</td>
+</tr>
+<tr>
+<td align="right">21684</td>
+<td>Málaga</td>
+<td align="right">29007</td>
+<td>Carranque-Hazas Cuevas</td>
+</tr>
+<tr>
+<td align="right">23485</td>
+<td>Málaga</td>
+<td align="right">29008</td>
+<td>La Goleta-San Felipe Neri-Centro Histórico</td>
+</tr>
+<tr>
+<td align="right">18549</td>
+<td>Málaga</td>
+<td align="right">29009</td>
+<td>Perchel Norte-La Trinidad</td>
+</tr>
+<tr>
+<td align="right">20405</td>
+<td>Málaga</td>
+<td align="right">29010</td>
+<td>Bailén-Miraflores-Suárez-Teatinos</td>
+</tr>
+<tr>
+<td align="right">16879</td>
+<td>Málaga</td>
+<td align="right">29011</td>
+<td>Martírinos-La Roca-Palma-Palmilla</td>
+</tr>
+<tr>
+<td align="right">21271</td>
+<td>Málaga</td>
+<td align="right">29012</td>
+<td>La Merced-Barcenillas-Seminario</td>
+</tr>
+<tr>
+<td align="right">20772</td>
+<td>Málaga</td>
+<td align="right">29013</td>
+<td>Olletas-Sierra Blanquilla-El Ejido</td>
+</tr>
+<tr>
+<td align="right">17284</td>
+<td>Málaga</td>
+<td align="right">29014</td>
+<td>Ciudad Jardín</td>
+</tr>
+<tr>
+<td align="right">36001</td>
+<td>Málaga</td>
+<td align="right">29016</td>
+<td>Malagueta-Monte Sancha</td>
+</tr>
+<tr>
+<td align="right">25955</td>
+<td>Málaga</td>
+<td align="right">29017</td>
+<td>Pedregalejo-Morlaco-Las Acacias-El Palo</td>
+</tr>
+<tr>
+<td align="right">28542</td>
+<td>Málaga</td>
+<td align="right">29018</td>
+<td>Cerrado de Calderón-Hacienda Paredes</td>
+</tr>
+<tr>
+<td align="right">20472</td>
+<td>Málaga</td>
+<td align="right">29140</td>
+<td>Churriana-La Noria-Buenavista</td>
+</tr>
+<tr>
+<td align="right">20250</td>
+<td>Málaga</td>
+<td align="right">29190</td>
+<td>El Chaparral-Los Morales-Torremar</td>
+</tr>
+<tr>
+<td align="right">16553</td>
+<td>Málaga</td>
+<td align="right">29590</td>
+<td>Campanillas</td>
+</tr>
+<tr>
+<td align="right">15980</td>
+<td>Málaga</td>
+<td align="right">29591</td>
+<td>Campanillas-Puerto La Torre</td>
+</tr>
+<tr>
+<td align="right">32553</td>
+<td>Murcia</td>
+<td align="right">30001</td>
+<td>La Catedral-San Bartolomé</td>
+</tr>
+<tr>
+<td align="right">22345</td>
+<td>Murcia</td>
+<td align="right">30002</td>
+<td>El Carmen-Buenos Aires</td>
+</tr>
+<tr>
+<td align="right">21940</td>
+<td>Murcia</td>
+<td align="right">30003</td>
+<td>Sta. Eulalia-San Juan-Vistabella</td>
+</tr>
+<tr>
+<td align="right">27233</td>
+<td>Murcia</td>
+<td align="right">30004</td>
+<td>San Antolín-San Pedro-Sta. Catalina</td>
+</tr>
+<tr>
+<td align="right">25452</td>
+<td>Murcia</td>
+<td align="right">30005</td>
+<td>San Andrés-San Nicolás</td>
+</tr>
+<tr>
+<td align="right">18478</td>
+<td>Murcia</td>
+<td align="right">30006</td>
+<td>Puente Tocinos</td>
+</tr>
+<tr>
+<td align="right">25143</td>
+<td>Murcia</td>
+<td align="right">30007</td>
+<td>Zarandona</td>
+</tr>
+<tr>
+<td align="right">30001</td>
+<td>Murcia</td>
+<td align="right">30008</td>
+<td>La Fama</td>
+</tr>
+<tr>
+<td align="right">24211</td>
+<td>Murcia</td>
+<td align="right">30009</td>
+<td>La Albatalia-San Antón-San Basilio-Sta. María de Gracia</td>
+</tr>
+<tr>
+<td align="right">18754</td>
+<td>Murcia</td>
+<td align="right">30010</td>
+<td>La Purísima-Barriomar-San Pío X</td>
+</tr>
+<tr>
+<td align="right">21486</td>
+<td>Murcia</td>
+<td align="right">30011</td>
+<td>Los Dolores</td>
+</tr>
+<tr>
+<td align="right">18803</td>
+<td>Murcia</td>
+<td align="right">30012</td>
+<td>San Benito-Patiño-Progreso</td>
+</tr>
+<tr>
+<td align="right">21624</td>
+<td>Murcia</td>
+<td align="right">30100</td>
+<td>El Puntal</td>
+</tr>
+<tr>
+<td align="right">23374</td>
+<td>Murcia</td>
+<td align="right">30107</td>
+<td>Guadalupe</td>
+</tr>
+<tr>
+<td align="right">20720</td>
+<td>Murcia</td>
+<td align="right">30110</td>
+<td>Cabezo de Torres</td>
+</tr>
+<tr>
+<td align="right">18923</td>
+<td>Murcia</td>
+<td align="right">30120</td>
+<td>El Palmar</td>
+</tr>
+<tr>
+<td align="right">15447</td>
+<td>Murcia</td>
+<td align="right">30139</td>
+<td>El Raal</td>
+</tr>
+<tr>
+<td align="right">21380</td>
+<td>Murcia</td>
+<td align="right">30150</td>
+<td>La Alberca</td>
+</tr>
+<tr>
+<td align="right">23066</td>
+<td>Murcia</td>
+<td align="right">30151</td>
+<td>Santo Angel</td>
+</tr>
+<tr>
+<td align="right">18904</td>
+<td>Murcia</td>
+<td align="right">30152</td>
+<td>Aljucer</td>
+</tr>
+<tr>
+<td align="right">15545</td>
+<td>Murcia</td>
+<td align="right">30153</td>
+<td>Corvera-La Murta-Los Garcías</td>
+</tr>
+<tr>
+<td align="right">18702</td>
+<td>Murcia</td>
+<td align="right">30157</td>
+<td>Algezares</td>
+</tr>
+<tr>
+<td align="right">17317</td>
+<td>Murcia</td>
+<td align="right">30158</td>
+<td>Garres y Lagues</td>
+</tr>
+<tr>
+<td align="right">17681</td>
+<td>Murcia</td>
+<td align="right">30160</td>
+<td>Las Lumbreras-Monteagudo-La Cueva</td>
+</tr>
+<tr>
+<td align="right">17427</td>
+<td>Murcia</td>
+<td align="right">30161</td>
+<td>Llano de Brujas</td>
+</tr>
+<tr>
+<td align="right">16826</td>
+<td>Murcia</td>
+<td align="right">30162</td>
+<td>Santa Cruz</td>
+</tr>
+<tr>
+<td align="right">18912</td>
+<td>Murcia</td>
+<td align="right">30163</td>
+<td>El Esparragal</td>
+</tr>
+<tr>
+<td align="right">17725</td>
+<td>Murcia</td>
+<td align="right">30168</td>
+<td>Era Alta</td>
+</tr>
+<tr>
+<td align="right">17182</td>
+<td>Murcia</td>
+<td align="right">30169</td>
+<td>San Ginés</td>
+</tr>
+<tr>
+<td align="right">27211</td>
+<td>Cartagena</td>
+<td align="right">30201</td>
+<td>Parque Arqueológico-Cerro Del Molinete</td>
+</tr>
+<tr>
+<td align="right">19394</td>
+<td>Cartagena</td>
+<td align="right">30202</td>
+<td>Los Grifos</td>
+</tr>
+<tr>
+<td align="right">20468</td>
+<td>Cartagena</td>
+<td align="right">30203</td>
+<td>San Ginés</td>
+</tr>
+<tr>
+<td align="right">23040</td>
+<td>Cartagena</td>
+<td align="right">30204</td>
+<td>Ensanche</td>
+</tr>
+<tr>
+<td align="right">22751</td>
+<td>Cartagena</td>
+<td align="right">30205</td>
+<td>Algameca</td>
+</tr>
+<tr>
+<td align="right">18672</td>
+<td>Cartagena</td>
+<td align="right">30300</td>
+<td>Peral</td>
+</tr>
+<tr>
+<td align="right">18772</td>
+<td>Cartagena</td>
+<td align="right">30310</td>
+<td>Los Dolores</td>
+</tr>
+<tr>
+<td align="right">24438</td>
+<td>Cartagena</td>
+<td align="right">30319</td>
+<td>Miranda</td>
+</tr>
+<tr>
+<td align="right">16265</td>
+<td>Cartagena</td>
+<td align="right">30330</td>
+<td>Albujón</td>
+</tr>
+<tr>
+<td align="right">16750</td>
+<td>Cartagena</td>
+<td align="right">30366</td>
+<td>El Algar</td>
+</tr>
+<tr>
+<td align="right">22077</td>
+<td>Cartagena</td>
+<td align="right">30370</td>
+<td>Cabo de Palos</td>
+</tr>
+<tr>
+<td align="right">19903</td>
+<td>Cartagena</td>
+<td align="right">30380</td>
+<td>La Manga</td>
+</tr>
+<tr>
+<td align="right">17902</td>
+<td>Cartagena</td>
+<td align="right">30385</td>
+<td>Los Belones-Las Barracas</td>
+</tr>
+<tr>
+<td align="right">15998</td>
+<td>Cartagena</td>
+<td align="right">30390</td>
+<td>La Aljorra</td>
+</tr>
+<tr>
+<td align="right">20344</td>
+<td>Cartagena</td>
+<td align="right">30393</td>
+<td>Galifa-El Portús</td>
+</tr>
+<tr>
+<td align="right">23745</td>
+<td>Cartagena</td>
+<td align="right">30394</td>
+<td>Canteras-Tentengorra</td>
+</tr>
+<tr>
+<td align="right">19636</td>
+<td>Cartagena</td>
+<td align="right">30395</td>
+<td>La Puebla</td>
+</tr>
+<tr>
+<td align="right">17401</td>
+<td>Murcia</td>
+<td align="right">30570</td>
+<td>Beniajan</td>
+</tr>
+<tr>
+<td align="right">16964</td>
+<td>Murcia</td>
+<td align="right">30579</td>
+<td>Torreagüera</td>
+</tr>
+<tr>
+<td align="right">15116</td>
+<td>Murcia</td>
+<td align="right">30580</td>
+<td>Alquerías</td>
+</tr>
+<tr>
+<td align="right">15139</td>
+<td>Murcia</td>
+<td align="right">30589</td>
+<td>Los Ramos</td>
+</tr>
+<tr>
+<td align="right">14878</td>
+<td>Murcia</td>
+<td align="right">30590</td>
+<td>Gea y Truyols</td>
+</tr>
+<tr>
+<td align="right">18428</td>
+<td>Cartagena</td>
+<td align="right">30593</td>
+<td>Los Conesas-La Palma-Los Salazares</td>
+</tr>
+<tr>
+<td align="right">17375</td>
+<td>Cartagena</td>
+<td align="right">30594</td>
+<td>Pozo Estrecho</td>
+</tr>
+<tr>
+<td align="right">22711</td>
+<td>Murcia</td>
+<td align="right">30830</td>
+<td>La Ñora</td>
+</tr>
+<tr>
+<td align="right">18187</td>
+<td>Murcia</td>
+<td align="right">30832</td>
+<td>Jabalí Nuevo</td>
+</tr>
+<tr>
+<td align="right">16780</td>
+<td>Murcia</td>
+<td align="right">30833</td>
+<td>Sangonera La Verde</td>
+</tr>
+<tr>
+<td align="right">16054</td>
+<td>Murcia</td>
+<td align="right">30835</td>
+<td>Cañada Hermosa</td>
+</tr>
+<tr>
+<td align="right">24610</td>
+<td>Oviedo</td>
+<td align="right">33001</td>
+<td>Pumarín</td>
+</tr>
+<tr>
+<td align="right">26565</td>
+<td>Oviedo</td>
+<td align="right">33002</td>
+<td>Centro-Norte</td>
+</tr>
+<tr>
+<td align="right">29594</td>
+<td>Oviedo</td>
+<td align="right">33003</td>
+<td>Centro-Este</td>
+</tr>
+<tr>
+<td align="right">34123</td>
+<td>Oviedo</td>
+<td align="right">33004</td>
+<td>Centro-Oeste</td>
+</tr>
+<tr>
+<td align="right">32518</td>
+<td>Oviedo</td>
+<td align="right">33005</td>
+<td>El Cristo</td>
+</tr>
+<tr>
+<td align="right">26030</td>
+<td>Oviedo</td>
+<td align="right">33006</td>
+<td>Buenavista</td>
+</tr>
+<tr>
+<td align="right">31227</td>
+<td>Oviedo</td>
+<td align="right">33007</td>
+<td>Buenavista</td>
+</tr>
+<tr>
+<td align="right">22830</td>
+<td>Oviedo</td>
+<td align="right">33008</td>
+<td>Fuente Del Forno</td>
+</tr>
+<tr>
+<td align="right">23396</td>
+<td>Oviedo</td>
+<td align="right">33009</td>
+<td>Fuente de La Plata</td>
+</tr>
+<tr>
+<td align="right">19911</td>
+<td>Oviedo</td>
+<td align="right">33010</td>
+<td>La Florida</td>
+</tr>
+<tr>
+<td align="right">20124</td>
+<td>Oviedo</td>
+<td align="right">33011</td>
+<td>Corredoria</td>
+</tr>
+<tr>
+<td align="right">22517</td>
+<td>Oviedo</td>
+<td align="right">33012</td>
+<td>Ferreros</td>
+</tr>
+<tr>
+<td align="right">23969</td>
+<td>Oviedo</td>
+<td align="right">33013</td>
+<td>Arganosa</td>
+</tr>
+<tr>
+<td align="right">21656</td>
+<td>Oviedo</td>
+<td align="right">33191</td>
+<td>Las Regueras</td>
+</tr>
+<tr>
+<td align="right">25664</td>
+<td>Gijón</td>
+<td align="right">33201</td>
+<td>Centro-Cimadevilla</td>
+</tr>
+<tr>
+<td align="right">23690</td>
+<td>Gijón</td>
+<td align="right">33202</td>
+<td>La Arena</td>
+</tr>
+<tr>
+<td align="right">29415</td>
+<td>Gijón</td>
+<td align="right">33203</td>
+<td>La Guía-Somió</td>
+</tr>
+<tr>
+<td align="right">24367</td>
+<td>Gijón</td>
+<td align="right">33204</td>
+<td>El Coto-Viesques</td>
+</tr>
+<tr>
+<td align="right">22132</td>
+<td>Gijón</td>
+<td align="right">33205</td>
+<td>El Llano de Arriba</td>
+</tr>
+<tr>
+<td align="right">26778</td>
+<td>Gijón</td>
+<td align="right">33206</td>
+<td>Laviada</td>
+</tr>
+<tr>
+<td align="right">21676</td>
+<td>Gijón</td>
+<td align="right">33207</td>
+<td>El Polígono</td>
+</tr>
+<tr>
+<td align="right">19574</td>
+<td>Gijón</td>
+<td align="right">33208</td>
+<td>El Llano de Abajo</td>
+</tr>
+<tr>
+<td align="right">19337</td>
+<td>Gijón</td>
+<td align="right">33209</td>
+<td>Ceares</td>
+</tr>
+<tr>
+<td align="right">18462</td>
+<td>Gijón</td>
+<td align="right">33210</td>
+<td>Pumarín</td>
+</tr>
+<tr>
+<td align="right">19999</td>
+<td>Oviedo</td>
+<td align="right">33211</td>
+<td>Gijón Sur (Tremañes-Roces-Nuevo Gijón-Montevil)</td>
+</tr>
+<tr>
+<td align="right">20234</td>
+<td>Oviedo</td>
+<td align="right">33212</td>
+<td>Natahoyo</td>
+</tr>
+<tr>
+<td align="right">18974</td>
+<td>Oviedo</td>
+<td align="right">33213</td>
+<td>La Calzada-Veriña</td>
+</tr>
+<tr>
+<td align="right">22029</td>
+<td>Oviedo</td>
+<td align="right">33350</td>
+<td>Granda-La Camocha</td>
+</tr>
+<tr>
+<td align="right">22913</td>
+<td>Oviedo</td>
+<td align="right">33391</td>
+<td>Castiello-Santurio</td>
+</tr>
+<tr>
+<td align="right">22903</td>
+<td>Oviedo</td>
+<td align="right">33392</td>
+<td>Cenero</td>
+</tr>
+<tr>
+<td align="right">29279</td>
+<td>Oviedo</td>
+<td align="right">33394</td>
+<td>Deva-Cabueñes</td>
+</tr>
+<tr>
+<td align="right">31425</td>
+<td>Canarias</td>
+<td align="right">35001</td>
+<td>Cono Sur</td>
+</tr>
+<tr>
+<td align="right">32346</td>
+<td>Canarias</td>
+<td align="right">35002</td>
+<td>Triana</td>
+</tr>
+<tr>
+<td align="right">29413</td>
+<td>Canarias</td>
+<td align="right">35003</td>
+<td>Arenales</td>
+</tr>
+<tr>
+<td align="right">27230</td>
+<td>Canarias</td>
+<td align="right">35004</td>
+<td>Lugo</td>
+</tr>
+<tr>
+<td align="right">37044</td>
+<td>Canarias</td>
+<td align="right">35005</td>
+<td>Ciudad Jardín</td>
+</tr>
+<tr>
+<td align="right">24468</td>
+<td>Canarias</td>
+<td align="right">35006</td>
+<td>Alcaravaneras</td>
+</tr>
+<tr>
+<td align="right">24972</td>
+<td>Canarias</td>
+<td align="right">35007</td>
+<td>Santa Catalina</td>
+</tr>
+<tr>
+<td align="right">24255</td>
+<td>Canarias</td>
+<td align="right">35008</td>
+<td>Tafira</td>
+</tr>
+<tr>
+<td align="right">19549</td>
+<td>Canarias</td>
+<td align="right">35009</td>
+<td>La Isleta</td>
+</tr>
+<tr>
+<td align="right">23631</td>
+<td>Canarias</td>
+<td align="right">35010</td>
+<td>Guanarteme</td>
+</tr>
+<tr>
+<td align="right">25208</td>
+<td>Canarias</td>
+<td align="right">35011</td>
+<td>Escaleritas</td>
+</tr>
+<tr>
+<td align="right">17664</td>
+<td>Canarias</td>
+<td align="right">35012</td>
+<td>Schamann</td>
+</tr>
+<tr>
+<td align="right">16625</td>
+<td>Canarias</td>
+<td align="right">35013</td>
+<td>La Paterna</td>
+</tr>
+<tr>
+<td align="right">18761</td>
+<td>Canarias</td>
+<td align="right">35014</td>
+<td>Miller</td>
+</tr>
+<tr>
+<td align="right">16880</td>
+<td>Canarias</td>
+<td align="right">35015</td>
+<td>La Matula</td>
+</tr>
+<tr>
+<td align="right">17890</td>
+<td>Canarias</td>
+<td align="right">35016</td>
+<td>Vega de San José</td>
+</tr>
+<tr>
+<td align="right">28188</td>
+<td>Canarias</td>
+<td align="right">35017</td>
+<td>Tafira</td>
+</tr>
+<tr>
+<td align="right">19335</td>
+<td>Canarias</td>
+<td align="right">35018</td>
+<td>Tamaraceite</td>
+</tr>
+<tr>
+<td align="right">27376</td>
+<td>Canarias</td>
+<td align="right">35019</td>
+<td>Siete Palmas</td>
+</tr>
+<tr>
+<td align="right">28088</td>
+<td>Vigo</td>
+<td align="right">36201</td>
+<td>Vigo Centro-Areal-Teis</td>
+</tr>
+<tr>
+<td align="right">21992</td>
+<td>Vigo</td>
+<td align="right">36202</td>
+<td>Casco Vello</td>
+</tr>
+<tr>
+<td align="right">25906</td>
+<td>Vigo</td>
+<td align="right">36203</td>
+<td>O Castro</td>
+</tr>
+<tr>
+<td align="right">22047</td>
+<td>Vigo</td>
+<td align="right">36204</td>
+<td>San Xosé Obreiro-Sárdoma-Casablanca-Calvario</td>
+</tr>
+<tr>
+<td align="right">19001</td>
+<td>Vigo</td>
+<td align="right">36205</td>
+<td>San Paulo-Casablanca-Calvario-Lavadores</td>
+</tr>
+<tr>
+<td align="right">18726</td>
+<td>Vigo</td>
+<td align="right">36206</td>
+<td>Lavadores-Fátima</td>
+</tr>
+<tr>
+<td align="right">18301</td>
+<td>Vigo</td>
+<td align="right">36207</td>
+<td>Teis</td>
+</tr>
+<tr>
+<td align="right">22379</td>
+<td>Vigo</td>
+<td align="right">36208</td>
+<td>Bouzas-Coia</td>
+</tr>
+<tr>
+<td align="right">19941</td>
+<td>Vigo</td>
+<td align="right">36209</td>
+<td>Coia</td>
+</tr>
+<tr>
+<td align="right">19841</td>
+<td>Vigo</td>
+<td align="right">36210</td>
+<td>Coia-Freixeiro</td>
+</tr>
+<tr>
+<td align="right">23569</td>
+<td>Vigo</td>
+<td align="right">36211</td>
+<td>Travesas-Pz Independencia-Camelias-Pi y Margall</td>
+</tr>
+<tr>
+<td align="right">21875</td>
+<td>Vigo</td>
+<td align="right">36212</td>
+<td>Alcabre-Navia</td>
+</tr>
+<tr>
+<td align="right">20346</td>
+<td>Vigo</td>
+<td align="right">36213</td>
+<td>Comesaña-Matamá</td>
+</tr>
+<tr>
+<td align="right">19158</td>
+<td>Vigo</td>
+<td align="right">36214</td>
+<td>Sárdoma-Lavadores</td>
+</tr>
+<tr>
+<td align="right">18381</td>
+<td>Vigo</td>
+<td align="right">36215</td>
+<td>Cabral-Lavadores</td>
+</tr>
+<tr>
+<td align="right">18386</td>
+<td>Vigo</td>
+<td align="right">36216</td>
+<td>Teis</td>
+</tr>
+<tr>
+<td align="right">19139</td>
+<td>Vigo</td>
+<td align="right">36312</td>
+<td>Beade</td>
+</tr>
+<tr>
+<td align="right">17677</td>
+<td>Vigo</td>
+<td align="right">36315</td>
+<td>Valladares</td>
+</tr>
+<tr>
+<td align="right">18732</td>
+<td>Vigo</td>
+<td align="right">36317</td>
+<td>Candeán</td>
+</tr>
+<tr>
+<td align="right">18626</td>
+<td>Vigo</td>
+<td align="right">36318</td>
+<td>Cabral</td>
+</tr>
+<tr>
+<td align="right">19887</td>
+<td>Vigo</td>
+<td align="right">36330</td>
+<td>Coruxo</td>
+</tr>
+<tr>
+<td align="right">25743</td>
+<td>Vigo</td>
+<td align="right">36331</td>
+<td>Coruxo</td>
+</tr>
+<tr>
+<td align="right">29076</td>
+<td>Santa Cruz de Tenerife</td>
+<td align="right">38001</td>
+<td>Rambla de Santa Cruz-Puerto</td>
+</tr>
+<tr>
+<td align="right">27804</td>
+<td>Santa Cruz de Tenerife</td>
+<td align="right">38002</td>
+<td>San Vicente Ferrer-Plaza de España</td>
+</tr>
+<tr>
+<td align="right">28094</td>
+<td>Santa Cruz de Tenerife</td>
+<td align="right">38003</td>
+<td>Av. Constitución-Palmetum</td>
+</tr>
+<tr>
+<td align="right">29698</td>
+<td>Santa Cruz de Tenerife</td>
+<td align="right">38004</td>
+<td>Ifara-Parque García Sanabria</td>
+</tr>
+<tr>
+<td align="right">24107</td>
+<td>Santa Cruz de Tenerife</td>
+<td align="right">38005</td>
+<td>Av Barranco de Santos-Tunel Juan Amigo de Lara</td>
+</tr>
+<tr>
+<td align="right">26325</td>
+<td>Santa Cruz de Tenerife</td>
+<td align="right">38006</td>
+<td>Rambla de Santa Cruz-Av Barranco de Santos</td>
+</tr>
+<tr>
+<td align="right">22322</td>
+<td>Santa Cruz de Tenerife</td>
+<td align="right">38007</td>
+<td>Parque de La Granja</td>
+</tr>
+<tr>
+<td align="right">18850</td>
+<td>Santa Cruz de Tenerife</td>
+<td align="right">38008</td>
+<td>Parque Las Indias-Barranco de Santos</td>
+</tr>
+<tr>
+<td align="right">21569</td>
+<td>Santa Cruz de Tenerife</td>
+<td align="right">38009</td>
+<td>Universidad de La Laguna Campus Central</td>
+</tr>
+<tr>
+<td align="right">17600</td>
+<td>Santa Cruz de Tenerife</td>
+<td align="right">38010</td>
+<td>Av. Principes de España</td>
+</tr>
+<tr>
+<td align="right">17186</td>
+<td>Santa Cruz de Tenerife</td>
+<td align="right">38107</td>
+<td>El Sobradillo-La Gallega-El Pilar</td>
+</tr>
+<tr>
+<td align="right">17391</td>
+<td>Santa Cruz de Tenerife</td>
+<td align="right">38108</td>
+<td>San Matías-Los Andenes-Las Chumberas</td>
+</tr>
+<tr>
+<td align="right">19204</td>
+<td>Santa Cruz de Tenerife</td>
+<td align="right">38111</td>
+<td>Santa María Del Mar-Añaza</td>
+</tr>
+<tr>
+<td align="right">17945</td>
+<td>Santa Cruz de Tenerife</td>
+<td align="right">38120</td>
+<td>San Andrés-Barranco del Cercado</td>
+</tr>
+<tr>
+<td align="right">20687</td>
+<td>Santa Cruz de Tenerife</td>
+<td align="right">38180</td>
+<td>Cueva Bermeja-Valle Crispín-Los Catalanes</td>
+</tr>
+<tr>
+<td align="right">20866</td>
+<td>Santander</td>
+<td align="right">39001</td>
+<td>Centro-Ayuntamiento</td>
+</tr>
+<tr>
+<td align="right">30927</td>
+<td>Santander</td>
+<td align="right">39002</td>
+<td>Centro-Ayuntamiento</td>
+</tr>
+<tr>
+<td align="right">23599</td>
+<td>Santander</td>
+<td align="right">39003</td>
+<td>Centro</td>
+</tr>
+<tr>
+<td align="right">27244</td>
+<td>Santander</td>
+<td align="right">39004</td>
+<td>Puerto Chico</td>
+</tr>
+<tr>
+<td align="right">30228</td>
+<td>Santander</td>
+<td align="right">39005</td>
+<td>El Sardinero-Los Pinares</td>
+</tr>
+<tr>
+<td align="right">21147</td>
+<td>Santander</td>
+<td align="right">39006</td>
+<td>San Martín-San Roque</td>
+</tr>
+<tr>
+<td align="right">21141</td>
+<td>Santander</td>
+<td align="right">39007</td>
+<td>San Fernando-General Dávila</td>
+</tr>
+<tr>
+<td align="right">20219</td>
+<td>Santander</td>
+<td align="right">39008</td>
+<td>Cuatro Caminos-Numancia-San Fernando</td>
+</tr>
+<tr>
+<td align="right">20566</td>
+<td>Santander</td>
+<td align="right">39009</td>
+<td>Barrio Pesquero (Castilla-Hermida)</td>
+</tr>
+<tr>
+<td align="right">23926</td>
+<td>Santander</td>
+<td align="right">39010</td>
+<td>Cuatro Caminos-San Fernando</td>
+</tr>
+<tr>
+<td align="right">20847</td>
+<td>Santander</td>
+<td align="right">39011</td>
+<td>Peñacastillo-Alisal</td>
+</tr>
+<tr>
+<td align="right">25530</td>
+<td>Santander</td>
+<td align="right">39012</td>
+<td>La Pereda</td>
+</tr>
+<tr>
+<td align="right">31276</td>
+<td>Sevilla</td>
+<td align="right">41001</td>
+<td>Casco Antiguo</td>
+</tr>
+<tr>
+<td align="right">25485</td>
+<td>Sevilla</td>
+<td align="right">41002</td>
+<td>Casco Antiguo</td>
+</tr>
+<tr>
+<td align="right">25492</td>
+<td>Sevilla</td>
+<td align="right">41003</td>
+<td>Casco Antiguo-Cerro-Amate-Nervión-S.Pablo-Sta.Justa</td>
+</tr>
+<tr>
+<td align="right">32954</td>
+<td>Sevilla</td>
+<td align="right">41004</td>
+<td>Casco Antiguo-Este-Nervión-Sur</td>
+</tr>
+<tr>
+<td align="right">25772</td>
+<td>Sevilla</td>
+<td align="right">41005</td>
+<td>Nervión-Sur</td>
+</tr>
+<tr>
+<td align="right">16818</td>
+<td>Sevilla</td>
+<td align="right">41006</td>
+<td>Bellavista-La Palmera-Casco Antiguo-Cerro-Amate-Sur</td>
+</tr>
+<tr>
+<td align="right">22671</td>
+<td>Sevilla</td>
+<td align="right">41007</td>
+<td>Nervión-Norte-S.Pablo-Sta.Justa</td>
+</tr>
+<tr>
+<td align="right">20260</td>
+<td>Sevilla</td>
+<td align="right">41008</td>
+<td>Macarena-Norte-S.Pablo-Sta.Justa</td>
+</tr>
+<tr>
+<td align="right">19766</td>
+<td>Sevilla</td>
+<td align="right">41009</td>
+<td>Casco Antiguo-Macarena-Norte</td>
+</tr>
+<tr>
+<td align="right">23096</td>
+<td>Sevilla</td>
+<td align="right">41010</td>
+<td>Los Remedios-Triana</td>
+</tr>
+<tr>
+<td align="right">30573</td>
+<td>Sevilla</td>
+<td align="right">41011</td>
+<td>Los Remedios-Triana</td>
+</tr>
+<tr>
+<td align="right">27558</td>
+<td>Sevilla</td>
+<td align="right">41012</td>
+<td>Bellavista-La Palmera-Sur</td>
+</tr>
+<tr>
+<td align="right">25439</td>
+<td>Sevilla</td>
+<td align="right">41013</td>
+<td>Bellavista-La Palmera-Casco Antiguo-Nervión-Sur</td>
+</tr>
+<tr>
+<td align="right">20847</td>
+<td>Sevilla</td>
+<td align="right">41014</td>
+<td>Bellavista-La Palmera</td>
+</tr>
+<tr>
+<td align="right">17776</td>
+<td>Sevilla</td>
+<td align="right">41015</td>
+<td>Este-Macarena-Norte</td>
+</tr>
+<tr>
+<td align="right">15786</td>
+<td>Sevilla</td>
+<td align="right">41016</td>
+<td>Bellavista-La Palmera-Cerro-Amate-Este</td>
+</tr>
+<tr>
+<td align="right">31160</td>
+<td>Sevilla</td>
+<td align="right">41018</td>
+<td>Nervión-Sur</td>
+</tr>
+<tr>
+<td align="right">17283</td>
+<td>Sevilla</td>
+<td align="right">41019</td>
+<td>Este-Norte-S. Pablo-Sta.Justa</td>
+</tr>
+<tr>
+<td align="right">22540</td>
+<td>Sevilla</td>
+<td align="right">41020</td>
+<td>Este-Norte</td>
+</tr>
+<tr>
+<td align="right">26660</td>
+<td>Valencia</td>
+<td align="right">46001</td>
+<td>El Pilar</td>
+</tr>
+<tr>
+<td align="right">43635</td>
+<td>Valencia</td>
+<td align="right">46002</td>
+<td>El Centro</td>
+</tr>
+<tr>
+<td align="right">31554</td>
+<td>Valencia</td>
+<td align="right">46003</td>
+<td>Carmen</td>
+</tr>
+<tr>
+<td align="right">50393</td>
+<td>Valencia</td>
+<td align="right">46004</td>
+<td>Pla de Remei</td>
+</tr>
+<tr>
+<td align="right">34329</td>
+<td>Valencia</td>
+<td align="right">46005</td>
+<td>Gran Vía</td>
+</tr>
+<tr>
+<td align="right">21921</td>
+<td>Valencia</td>
+<td align="right">46006</td>
+<td>Ruzafa</td>
+</tr>
+<tr>
+<td align="right">24545</td>
+<td>Valencia</td>
+<td align="right">46007</td>
+<td>Patraix</td>
+</tr>
+<tr>
+<td align="right">25748</td>
+<td>Valencia</td>
+<td align="right">46008</td>
+<td>Extramurs</td>
+</tr>
+<tr>
+<td align="right">20867</td>
+<td>Valencia</td>
+<td align="right">46009</td>
+<td>Marchalenes</td>
+</tr>
+<tr>
+<td align="right">36377</td>
+<td>Valencia</td>
+<td align="right">46010</td>
+<td>Mestalla</td>
+</tr>
+<tr>
+<td align="right">20177</td>
+<td>Valencia</td>
+<td align="right">46011</td>
+<td>Poblet Maritims</td>
+</tr>
+<tr>
+<td align="right">22978</td>
+<td>Valencia</td>
+<td align="right">46012</td>
+<td>La Albufera</td>
+</tr>
+<tr>
+<td align="right">22299</td>
+<td>Valencia</td>
+<td align="right">46013</td>
+<td>Quatre</td>
+</tr>
+<tr>
+<td align="right">19858</td>
+<td>Valencia</td>
+<td align="right">46014</td>
+<td>Barrio de La Luz</td>
+</tr>
+<tr>
+<td align="right">24595</td>
+<td>Valencia</td>
+<td align="right">46015</td>
+<td>Campanar</td>
+</tr>
+<tr>
+<td align="right">19641</td>
+<td>Valencia</td>
+<td align="right">46016</td>
+<td>Tavernes Blanques</td>
+</tr>
+<tr>
+<td align="right">18847</td>
+<td>Valencia</td>
+<td align="right">46017</td>
+<td>La Cruz Cubierto</td>
+</tr>
+<tr>
+<td align="right">20218</td>
+<td>Valencia</td>
+<td align="right">46018</td>
+<td>La Luz</td>
+</tr>
+<tr>
+<td align="right">19093</td>
+<td>Valencia</td>
+<td align="right">46019</td>
+<td>Torrefiel</td>
+</tr>
+<tr>
+<td align="right">23905</td>
+<td>Valencia</td>
+<td align="right">46020</td>
+<td>Benimaclet</td>
+</tr>
+<tr>
+<td align="right">25352</td>
+<td>Valencia</td>
+<td align="right">46021</td>
+<td>Algirós</td>
+</tr>
+<tr>
+<td align="right">21835</td>
+<td>Valencia</td>
+<td align="right">46022</td>
+<td>Ayora</td>
+</tr>
+<tr>
+<td align="right">27905</td>
+<td>Valencia</td>
+<td align="right">46023</td>
+<td>La Crus Del Grao</td>
+</tr>
+<tr>
+<td align="right">19050</td>
+<td>Valencia</td>
+<td align="right">46024</td>
+<td>Nazaret</td>
+</tr>
+<tr>
+<td align="right">18630</td>
+<td>Valencia</td>
+<td align="right">46025</td>
+<td>Benicalap</td>
+</tr>
+<tr>
+<td align="right">19241</td>
+<td>Valencia</td>
+<td align="right">46026</td>
+<td>Malilla</td>
+</tr>
+<tr>
+<td align="right">17616</td>
+<td>Valencia</td>
+<td align="right">46035</td>
+<td>Sant Pau-Benimanet</td>
+</tr>
+<tr>
+<td align="right">30996</td>
+<td>Valencia</td>
+<td align="right">46112</td>
+<td>Massarrochos-Santa Bárbara</td>
+</tr>
+<tr>
+<td align="right">32596</td>
+<td>Valladolid</td>
+<td align="right">47001</td>
+<td>Centro-Paseo Isabel La Católica-Plaza España</td>
+</tr>
+<tr>
+<td align="right">26676</td>
+<td>Valladolid</td>
+<td align="right">47002</td>
+<td>Centro-Universidad-Plaza San Juan</td>
+</tr>
+<tr>
+<td align="right">25834</td>
+<td>Valladolid</td>
+<td align="right">47003</td>
+<td>Las Moreras-Rondilla-Hospital-Centro San Miguel</td>
+</tr>
+<tr>
+<td align="right">25912</td>
+<td>Valladolid</td>
+<td align="right">47004</td>
+<td>Recoletos-San Andrés-Caño Argales</td>
+</tr>
+<tr>
+<td align="right">19662</td>
+<td>Valladolid</td>
+<td align="right">47005</td>
+<td>Plaza Circular-Las Batallas</td>
+</tr>
+<tr>
+<td align="right">24598</td>
+<td>Valladolid</td>
+<td align="right">47006</td>
+<td>Paseo Zorrilla-Cuatro de Marzo</td>
+</tr>
+<tr>
+<td align="right">23518</td>
+<td>Valladolid</td>
+<td align="right">47007</td>
+<td>Campo Grande-Arco Ladrillo</td>
+</tr>
+<tr>
+<td align="right">24575</td>
+<td>Valladolid</td>
+<td align="right">47008</td>
+<td>Parque Alameda-Covaresa</td>
+</tr>
+<tr>
+<td align="right">22168</td>
+<td>Valladolid</td>
+<td align="right">47009</td>
+<td>La Overuela-Navabuena</td>
+</tr>
+<tr>
+<td align="right">17745</td>
+<td>Valladolid</td>
+<td align="right">47010</td>
+<td>Rondilla-Santa Clara-Barrio España</td>
+</tr>
+<tr>
+<td align="right">19537</td>
+<td>Valladolid</td>
+<td align="right">47011</td>
+<td>San Pablo-Barrio España-Barrio Belén-Pilarica</td>
+</tr>
+<tr>
+<td align="right">18025</td>
+<td>Valladolid</td>
+<td align="right">47012</td>
+<td>Arcas Reales-Pajarillos</td>
+</tr>
+<tr>
+<td align="right">18282</td>
+<td>Valladolid</td>
+<td align="right">47013</td>
+<td>Delicias</td>
+</tr>
+<tr>
+<td align="right">24534</td>
+<td>Valladolid</td>
+<td align="right">47014</td>
+<td>Parquesol-Huerta Del Rey</td>
+</tr>
+<tr>
+<td align="right">25538</td>
+<td>Valladolid</td>
+<td align="right">47015</td>
+<td>Villa Del Prado</td>
+</tr>
+<tr>
+<td align="right">28580</td>
+<td>Valladolid</td>
+<td align="right">47016</td>
+<td>Parquesol</td>
+</tr>
+<tr>
+<td align="right">28270</td>
+<td>Zaragoza</td>
+<td align="right">50001</td>
+<td>Casco Viejo</td>
+</tr>
+<tr>
+<td align="right">18738</td>
+<td>Zaragoza</td>
+<td align="right">50002</td>
+<td>Las Fuentes</td>
+</tr>
+<tr>
+<td align="right">20436</td>
+<td>Zaragoza</td>
+<td align="right">50003</td>
+<td>La Almozara</td>
+</tr>
+<tr>
+<td align="right">26509</td>
+<td>Zaragoza</td>
+<td align="right">50004</td>
+<td>Centro-Paseo de La Independencia</td>
+</tr>
+<tr>
+<td align="right">22584</td>
+<td>Zaragoza</td>
+<td align="right">50005</td>
+<td>Centro-Cortes de Aragón</td>
+</tr>
+<tr>
+<td align="right">27517</td>
+<td>Zaragoza</td>
+<td align="right">50006</td>
+<td>Centro</td>
+</tr>
+<tr>
+<td align="right">19208</td>
+<td>Zaragoza</td>
+<td align="right">50007</td>
+<td>Torrero-La Paz-San José</td>
+</tr>
+<tr>
+<td align="right">26576</td>
+<td>Zaragoza</td>
+<td align="right">50008</td>
+<td>Centro- Paseo Sagasta</td>
+</tr>
+<tr>
+<td align="right">27768</td>
+<td>Zaragoza</td>
+<td align="right">50009</td>
+<td>Universidad-Romareda</td>
+</tr>
+<tr>
+<td align="right">19817</td>
+<td>Zaragoza</td>
+<td align="right">50010</td>
+<td>Parque Roma</td>
+</tr>
+<tr>
+<td align="right">23623</td>
+<td>Zaragoza</td>
+<td align="right">50011</td>
+<td>Miralbueno</td>
+</tr>
+<tr>
+<td align="right">28912</td>
+<td>Zaragoza</td>
+<td align="right">50012</td>
+<td>Oliver-Valdefierro-Casablanca</td>
+</tr>
+<tr>
+<td align="right">19847</td>
+<td>Zaragoza</td>
+<td align="right">50013</td>
+<td>Cartuja Baja</td>
+</tr>
+<tr>
+<td align="right">21191</td>
+<td>Zaragoza</td>
+<td align="right">50014</td>
+<td>Rabal</td>
+</tr>
+<tr>
+<td align="right">20378</td>
+<td>Zaragoza</td>
+<td align="right">50015</td>
+<td>Parque Goya 1</td>
+</tr>
+<tr>
+<td align="right">21720</td>
+<td>Zaragoza</td>
+<td align="right">50016</td>
+<td>Santa Isabel</td>
+</tr>
+<tr>
+<td align="right">18670</td>
+<td>Zaragoza</td>
+<td align="right">50017</td>
+<td>Delicias</td>
+</tr>
+<tr>
+<td align="right">22368</td>
+<td>Zaragoza</td>
+<td align="right">50018</td>
+<td>Parque Goya 2</td>
+</tr>
+<tr>
+<td align="right">21167</td>
+<td>Zaragoza</td>
+<td align="right">50019</td>
+<td>Casablanca</td>
+</tr>
+<tr>
+<td align="right">21808</td>
+<td>Zaragoza</td>
+<td align="right">50021</td>
+<td>Torrero-La Paz-Parque Venecia</td>
+</tr>
+<tr>
+<td align="right">19970</td>
+<td>Zaragoza</td>
+<td align="right">50022</td>
+<td>Arcosur</td>
+</tr>
+<tr>
+<td align="right">20732</td>
+<td>Zaragoza</td>
+<td align="right">50059</td>
+<td>Montañana-Barrio Del Saso</td>
+</tr>
+<tr>
+<td align="right">18971</td>
+<td>Zaragoza</td>
+<td align="right">50120</td>
+<td>Monzalbarba</td>
+</tr>
+<tr>
+<td align="right">23565</td>
+<td>Zaragoza</td>
+<td align="right">50190</td>
+<td>Garrapinillos</td>
+</tr>
+<tr>
+<td align="right">21644</td>
+<td>Zaragoza</td>
+<td align="right">50194</td>
+<td>Movera-Torre Larraz</td>
+</tr>
+<tr>
+<td align="right">18254</td>
+<td>Zaragoza</td>
+<td align="right">50620</td>
+<td>Casetas</td>
+</tr>
+<tr>
+<td align="right">20575</td>
+<td>Zaragoza</td>
+<td align="right">50720</td>
+<td>Cartuja Baja</td>
+</tr>
+<tr>
+<td align="right">23018</td>
+<td>Zaragoza</td>
+<td align="right">50820</td>
+<td>San Juan de Mozarrifar</td>
+</tr>
+</tbody></table>
