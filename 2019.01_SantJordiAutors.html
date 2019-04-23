@@ -1,0 +1,6540 @@
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" lang="es" xml:lang="es">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+	<style>
+			@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');			
+			h3 {
+        	font-family: OpenSans-Semibold, Open Sans;
+        	font-weight:600;
+        	font-size: 25 px;
+        	fill: #323232;
+     	}
+	</style>
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></script>
+	<script type="text/javascript" language="javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.rawgit.com/duroty/responsive/master/app.embed.js"></script>
+	<script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
+	<script type="text/javascript" class="init">
+$(document).ready(function() {
+	$('#example').DataTable( {
+		"pageLength": 15,
+		"bLengthChange" : false,
+		"order": [ 0, "desc" ],
+		"language": {
+			"decimal": ",",
+			"thousands":".",
+            "lengthMenu": "Mostrando _MENU_ registros por página",
+            "zeroRecords": "No hay ningún resultado",
+            "info": "Mostrando página _PAGE_ de _PAGES_",
+            "infoEmpty": "No hay ningún resultado",
+            "search":         "Buscar:",
+            "infoFiltered": "(Filtrado de _MAX_ registros)",
+            "paginate": {
+        "first":      "Primera",
+        "last":       "Última",
+        "next":       "Siguiente",
+        "previous":   "Previa"
+    }
+        }
+        
+	});
+} );
+	</script>
+<h1>¿Dónde firman los autores?</h1>
+<table id="example" class="table display compact table-hover table-sm" style="width:100%" >  
+<thead><tr><th title="Field #1">Autor</th>
+<th title="Field #2">Librería</th>
+<th title="Field #3">Hora</th>
+</tr></thead>
+<tbody><tr>
+<td>Aitana</td>
+<td>Fnac Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Aitana</td>
+<td>Fnac Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Pau Arenós</td>
+<td>Ascamil</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Pau Arenós</td>
+<td>Alibri</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Sandra Barneda</td>
+<td>On The Road</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Sandra Barneda</td>
+<td>Alibri</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Sandra Barneda</td>
+<td>Llibreria + Bernat</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Jordi Basté</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Jordi Basté</td>
+<td>La Impossible</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Jordi Basté</td>
+<td>Abacus Plaza Catalunya</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Elisabet Benavent</td>
+<td>Fnac Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Elisabet Benavent</td>
+<td>Fnac Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Elisabet Benavent</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Elisabet Benavent</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Patricia Benito</td>
+<td>Natura Pelayo</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Patricia Benito</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Patricia Benito</td>
+<td>Universitària Ben Vil</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Antoni Bolinches</td>
+<td>Casa del Llibre Passeig De Gràcia</td>
+<td>10:00-11:00</td>
+</tr>
+<tr>
+<td>Antoni Bolinches</td>
+<td>Abacus Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Antoni Bolinches</td>
+<td>Fnac Las Arenas</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Antoni Bolinches</td>
+<td>Alibri</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>César Bona</td>
+<td>Abacus Rambla</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>César Bona</td>
+<td>Punt I Apart</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>César Bona</td>
+<td>Lamas</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Paula Bonet</td>
+<td>Laie CCCB</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Paula Bonet</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Paula Bonet</td>
+<td>Abacus Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Paula Bonet</td>
+<td>Casa del Llibre Rambla</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Paula Bonet</td>
+<td>La Central</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Joan Botta</td>
+<td>Diari Ara</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Joan Botta</td>
+<td>La Impossible</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Joan Botta</td>
+<td>Col·legi De Periodistes</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Antonio Cabanas</td>
+<td>Museu Egipci</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Enric Calpena</td>
+<td>Caixa D&#39;Eines</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Enric Calpena</td>
+<td>La Impossible</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Enric Calpena</td>
+<td>Abacus Plaza Catalunya</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Enric Calpena</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Enric Calpena</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>John Carlin y Oriol Malet</td>
+<td>Casa del Llibre Rambla</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>José Ignacio Carnero</td>
+<td>La Calders</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Alfonso Casas</td>
+<td>Norma Cómics</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Alfonso Casas</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Alfonso Casas</td>
+<td>La Central Del Raval</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Javier Castillo</td>
+<td>Fnac Triangle</td>
+<td>10:00-11:00</td>
+</tr>
+<tr>
+<td>Javier Castillo</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Javier Castillo</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Javier Castillo</td>
+<td>Casa del Llibre Passeig De Gràcia</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Javier Castillo</td>
+<td>Casa del Llibre Passeig De Gràcia</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Javier Cercas y José Pablo García</td>
+<td>Laie Casp</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Javier Cercas y José Pablo García</td>
+<td>Campus</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Javier Cercas y José Pablo García</td>
+<td>La Central Del Raval</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Javier Cercas y José Pablo García</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Sonia Cervantes</td>
+<td>Alibri</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Sonia Cervantes</td>
+<td>Caixa D&#39;Eines</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Charuca</td>
+<td>Fnac Illa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Charuca</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Charuca</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Almudena Cid</td>
+<td>La Central</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Almudena Cid</td>
+<td>Maite Llibres</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Almudena Cid</td>
+<td>Fnac Illa</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Almudena Cid</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Mia Couto</td>
+<td>Altaïr</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Mia Couto</td>
+<td>Laie Pedrera</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Jordi Cruz</td>
+<td>Abacus Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Jordi Cruz</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Jordi Cruz</td>
+<td>Fnac Illa</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Jordi Cruz</td>
+<td>Llibreria + Bernat</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Dani El Rojo</td>
+<td>Ascamil</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Cristina Daura</td>
+<td>Laie CCCB</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Cristina Daura</td>
+<td>Campus</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Virginie Despentes</td>
+<td>Llibreria Documenta Parada</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Virginie Despentes</td>
+<td>La Central</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Virginie Despentes</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Virginie Despentes</td>
+<td>Laie CCCB</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Virginie Despentes</td>
+<td>La Central Del Raval</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Destripando La Historia</td>
+<td>Carrefour Glòries</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Destripando La Historia</td>
+<td>Carrefour Glòries</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Destripando La Historia</td>
+<td>Bolibloc</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Destripando La Historia</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Raquel Díaz Reguera</td>
+<td>Campus</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Raquel Díaz Reguera</td>
+<td>La Central Del Raval</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Raquel Díaz Reguera</td>
+<td>Fnac Illa</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Raquel Díaz Reguera</td>
+<td>El Corte Inglés Diagonal</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Enfermera Saturada</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Enfermera Saturada</td>
+<td>El Corte Inglés Portal De L&#39;Àngel</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Enfermera Saturada</td>
+<td>Carrefour Glòries</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Albert Espinosa</td>
+<td>Casa del Llibre Passeig De Gràcia</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Albert Espinosa</td>
+<td>Abacus Rambla</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Albert Espinosa</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Albert Espinosa</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Albert Espinosa</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Ramón Fauria</td>
+<td>Fnac Las Arenas</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Laura Fernández</td>
+<td>Laie CCCB</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Laura Fernández</td>
+<td>La Central Moritz</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Laura Fernández</td>
+<td>Gigamesh</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Laura Fernández</td>
+<td>La Central</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Laura Ferrero</td>
+<td>La Central Moritz</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Laura Ferrero</td>
+<td>Llibreria + Bernat</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Pablo Foncillas</td>
+<td>Llibreria Hernàndez</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Roy Galán</td>
+<td>Fnac Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Roy Galán</td>
+<td>Ascamil</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Roy Galán</td>
+<td>Campus</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Christian Gálvez</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Christian Gálvez</td>
+<td>Llibreria + Bernat</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Christian Gálvez</td>
+<td>Lamas</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Christian Gálvez</td>
+<td>Universitària Ben Vil</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Lula Gómez</td>
+<td>On The Road</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Lula Gómez</td>
+<td>Bolibloc</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Lula Gómez</td>
+<td>Norma Cómics</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Raúl Gómez</td>
+<td>Casa del Llibre Rambla</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Raúl Gómez</td>
+<td>Universitària Ben Vil</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Raúl Gómez</td>
+<td>Alibri</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Raúl Gómez</td>
+<td>Fnac Illa</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Raúl Gómez</td>
+<td>El Corte Inglés Diagonal</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Juan Gómez-Jurado</td>
+<td>Casa del Llibre Rambla</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Juan Gómez-Jurado</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Juan Gómez-Jurado</td>
+<td>Abacus Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Juan Gómez-Jurado</td>
+<td>Fnac Illa</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Juan Gómez-Jurado</td>
+<td>Fnac Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Juan Gómez-Jurado</td>
+<td>Maite Llibres</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Agustina Guerrero</td>
+<td>Norma Cómics</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Agustina Guerrero</td>
+<td>Llibreria Lata Peinada</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Agustina Guerrero</td>
+<td>Laie CCCB</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Carlos Hernández De Miguel</td>
+<td>Llibreria Adserà</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Carlos Hernández De Miguel</td>
+<td>Llibreria Adserà</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>María Herrejón</td>
+<td>Fnac Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>María Herrejón</td>
+<td>Santos Ochoa</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>María Herrejón</td>
+<td>Campus</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>María Hesse</td>
+<td>Laie CCCB</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>María Hesse</td>
+<td>La Central Del Raval</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>María Hesse</td>
+<td>Alibri</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>María Hesse</td>
+<td>Caixa D&#39;Eines</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Toni Hill</td>
+<td>Alibri</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Toni Hill</td>
+<td>Caixa D&#39;Eines</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Toni Hill</td>
+<td>Universitària Ben Vil</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Toni Hill</td>
+<td>Somnegra</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Toni Hill</td>
+<td>Abacus Plaza Catalunya</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Toni Hill</td>
+<td>El Corte Inglés Portal De L&#39;Àngel</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Toni Hill</td>
+<td>Maite Llibres</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Francisco Ibáñez</td>
+<td>Abacus Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Francisco Ibáñez</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Francisco Ibáñez</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Francisco Ibáñez</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Nuria Labari</td>
+<td>Laie Casp</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Nuria Labari</td>
+<td>La Central</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Nuria Labari</td>
+<td>Llibreria Documenta Parada</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Sarah Lark</td>
+<td>Llibreria Hernàndez</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Sarah Lark</td>
+<td>Abacus Palau Robert</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Sarah Lark</td>
+<td>El Corte Inglés Diagonal</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Sarah Lark</td>
+<td>Fnac Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Carla Laubalo</td>
+<td>Norma Cómics</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Carla Laubalo</td>
+<td>Fnac Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Alaitz Leceaga</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Alaitz Leceaga</td>
+<td>Llibreria Hernàndez</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Alaitz Leceaga</td>
+<td>Abacus Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Alaitz Leceaga</td>
+<td>El Corte Inglés Diagonal</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Ricard López y Magela Ronda</td>
+<td>Lamas</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ricard López y Magela Ronda</td>
+<td>Caixa D&#39;Eines</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Loquillo</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Loquillo</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Loquillo</td>
+<td>Fnac Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Ray Loriga</td>
+<td>Alibri</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Ray Loriga</td>
+<td>La Central</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ray Loriga</td>
+<td>Abacus Rambla</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Ray Loriga</td>
+<td>Laie</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Ray Loriga</td>
+<td>Llibreria Documenta Parada</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Andrea Lucio y Jordi de Miguel</td>
+<td>Bolibloc</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Andrea Lucio y Jordi de Miguel</td>
+<td>La Central Moritz</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Andrea Lucio y Jordi de Miguel</td>
+<td>Laie CCCB</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Shaina Machlus</td>
+<td>Llibreria Documenta Parada</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Shaina Machlus</td>
+<td>La Calders</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Shaina Machlus</td>
+<td>Laie CCCB</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Shaina Machlus</td>
+<td>La Central Del Raval</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Ana Marín</td>
+<td>Abacus Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ana Marín</td>
+<td>El Corte Inglés Diagonal</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Ana Marín</td>
+<td>Campus</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Ana Marín</td>
+<td>Casa del Llibre Passeig De Gràcia</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Marta Martínez</td>
+<td>Cuco Vegan Fashion</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Marta Martínez</td>
+<td>Cuco Vegan Fashion</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Luna Miguel</td>
+<td>La Central</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Luna Miguel</td>
+<td>Llibreria Documenta Parada</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Luna Miguel</td>
+<td>Laie</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Luna Miguel</td>
+<td>La Calders</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Luna Miguel</td>
+<td>La Central Moritz</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Juan José Millás</td>
+<td>La Central</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Juan José Millás</td>
+<td>Casa del Llibre Rambla</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Juan José Millás</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Juan José Millás</td>
+<td>Llibreria Documenta</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Juan José Millás</td>
+<td>Laie</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Juan José Millás</td>
+<td>Abacus Palau Robert</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Francesc Miralles</td>
+<td>Fnac Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Francesc Miralles</td>
+<td>Alibri</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Francesc Miralles</td>
+<td>Lamas</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Mongolia</td>
+<td>Punt i Apart</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Mongolia</td>
+<td>Mongolia</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Mongolia</td>
+<td>Laie CCCB</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Mongolia</td>
+<td>Norma Cómics</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Mongolia</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Vanessa Montfort</td>
+<td>Casa del Llibre Passeig De Gràcia</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Vanessa Montfort</td>
+<td>Abacus Palau Robert</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Vanessa Montfort</td>
+<td>Campus</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Anna Morató</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Anna Morató</td>
+<td>Bolibloc</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Anna Morató</td>
+<td>Abacus Palau Robert</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Anna Morató</td>
+<td>Campus</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Elvira Navarro</td>
+<td>La Central</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Elvira Navarro</td>
+<td>Laie Pedrera</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Elvira Navarro</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Julia Navarro</td>
+<td>Casa del Llibre Rambla</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Julia Navarro</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Julia Navarro</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Julia Navarro</td>
+<td>Abacus Illa</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Julia Navarro</td>
+<td>Llibreria + Bernat</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Julia Navarro</td>
+<td>El Corte Inglés Diagonal</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Gemma Nierga</td>
+<td>Col·legi De Periodistes</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Gemma Nierga</td>
+<td>Òmnium</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Gemma Nierga</td>
+<td>Casa del Llibre Passeig De Gràcia</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Gemma Nierga</td>
+<td>Abacus Rambla</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Gemma Nierga</td>
+<td>La Central</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Gemma Nierga</td>
+<td>Diari Ara</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Jordi Nogués</td>
+<td>El Corte Inglés Diagonal</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Jordi Nogués</td>
+<td>Abacus Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ariadna Oltra</td>
+<td>Diari Ara</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Ariadna Oltra</td>
+<td>Caixa D&#39;Eines</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Ariadna Oltra</td>
+<td>Laie Pedrera</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Bruno Oro</td>
+<td>Abacus Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Bruno Oro</td>
+<td>El Corte Inglés Portal De L&#39;Àngel</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Bruno Oro</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Bruno Oro</td>
+<td>Casa del Llibre Rambla</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Bruno Oro</td>
+<td>Diari Ara</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Bruno Oro</td>
+<td>La Central</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Víctor Parkas</td>
+<td>La Calders</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Mónica Pérez</td>
+<td>Fnac Illa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Mónica Pérez</td>
+<td>El Corte Inglés Diagonal</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Mónica Pérez</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Mónica Pérez</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Mónica Pérez</td>
+<td>Abacus Plaza Catalunya</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Patricio Pron</td>
+<td>Llibreria Lata Peinada</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Patricio Pron</td>
+<td>La Central</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Patricio Pron</td>
+<td>Alibri</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Patricio Pron</td>
+<td>Laie CCCB</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Patricio Pron</td>
+<td>Casa del Llibre Passeig De Gràcia</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Patricio Pron</td>
+<td>Llibreria Documenta Parada</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Romain Puértolas</td>
+<td>Campus</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Romain Puértolas</td>
+<td>Llibreria Jaimes</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Inma Puig</td>
+<td>Abacus Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Inma Puig</td>
+<td>Llibreria + Bernat</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Ana Punset</td>
+<td>El Corte Inglés Diagonal</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ana Punset</td>
+<td>Abacus Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Ana Punset</td>
+<td>El Corte Inglés Portal De L&#39;Àngel</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Ana Punset</td>
+<td>Abacus Plaza Catalunya</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>María Reig</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>María Reig</td>
+<td>El Corte Inglés Diagonal</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>María Reig</td>
+<td>Llibreria + Bernat</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Sofía Rhei</td>
+<td>Campus</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Raquel Riba Rossy</td>
+<td>Abacus Palau Robert</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Raquel Riba Rossy</td>
+<td>Casa del Llibre Passeig De Gràcia</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Raquel Riba Rossy</td>
+<td>La Central</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Raquel Riba Rossy</td>
+<td>On The Road</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Raquel Riba Rossy</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Raquel Riba Rossy</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Maria Ripoll y Elisenda Roca</td>
+<td>Diari Ara</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Maria Ripoll y Elisenda Roca</td>
+<td>La Calders</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Maria Ripoll y Elisenda Roca</td>
+<td>Punt I Apart</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Maria Ripoll y Elisenda Roca</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Maria Ripoll y Elisenda Roca</td>
+<td>Abacus Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Manuel Rivas</td>
+<td>Laie CCCB</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Manuel Rivas</td>
+<td>La Central Moritz</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Manuel Rivas</td>
+<td>Laie</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Manuel Rivas</td>
+<td>Campus</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Ana Belén Rivero</td>
+<td>Campus</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ana Belén Rivero</td>
+<td>Bolibloc</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Ana Belén Rivero</td>
+<td>Norma Cómics</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Maria Mercè Roca</td>
+<td>La Impossible</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Maria Mercè Roca</td>
+<td>Punt I Apart</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Antonio J. Rodríguez</td>
+<td>Llibreria Documenta</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Antonio J. Rodríguez</td>
+<td>La Calders</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Christina Rosenvinge</td>
+<td>Abacus Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Christina Rosenvinge</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Christina Rosenvinge</td>
+<td>La Central Del Raval</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Christina Rosenvinge</td>
+<td>La Central Moritz</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Christina Rosenvinge</td>
+<td>Pangea</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Rozalén</td>
+<td>Alibri</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Rozalén</td>
+<td>Caixa D&#39;Eines</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Rozalén</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Roger Rubio</td>
+<td>Somnegra</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Javier Ruescas</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Javier Ruescas</td>
+<td>Ascamil</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Javier Ruescas</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>José Enrique Ruiz-Domènec</td>
+<td>Laie CCCB</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>José Enrique Ruiz-Domènec</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Karina Sainz Borgo</td>
+<td>Laie Pedrera</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Karina Sainz Borgo</td>
+<td>La Central</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Karina Sainz Borgo</td>
+<td>Llibreria + Bernat</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Karina Sainz Borgo</td>
+<td>El Corte Inglés Diagonal</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Karina Sainz Borgo</td>
+<td>Fnac Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Mikel Santiago</td>
+<td>Universitària Ben Vil</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Mikel Santiago</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Mikel Santiago</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Mikel Santiago</td>
+<td>Abacus Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Ismael Serrano</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Ismael Serrano</td>
+<td>Bolibloc</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ismael Serrano</td>
+<td>Ascamil</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Jordi Sierra I Fabra</td>
+<td>Diari Ara</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Jordi Sierra I Fabra</td>
+<td>Alibri</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Albert Solà</td>
+<td>Singlatana</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Carme (Ilustradora) Solé Vendrell</td>
+<td>La Central Del Raval</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ame Soler</td>
+<td>La Central Moritz</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ame Soler</td>
+<td>Laie CCCB</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Ame Soler</td>
+<td>La Carbonera</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Chloé Sucrée</td>
+<td>Campus</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Chloé Sucrée</td>
+<td>Natura Casa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Chloé Sucrée</td>
+<td>Llibreria Hernàndez</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Chloé Sucrée</td>
+<td>Kave Home</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Hermanos Torres</td>
+<td>El Corte Inglés Portal De L&#39;Àngel</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Hermanos Torres</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Mery Turiel</td>
+<td>El Corte Inglés Diagonal</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Mery Turiel</td>
+<td>Abacus Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Mery Turiel</td>
+<td>Campus</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Mery Turiel</td>
+<td>El Corte Inglés Portal De L&#39;Àngel</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Ousman Umar</td>
+<td>Altaïr</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ousman Umar</td>
+<td>Universitària Ben Vil</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Ousman Umar</td>
+<td>Abacus Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Coia Valls</td>
+<td>Bolibloc</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Coia Valls</td>
+<td>Campus</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Coia Valls</td>
+<td>Punt I Apart</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Coia Valls</td>
+<td>Alibri</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Desireé Vela-Lobedde</td>
+<td>La Central Del Raval</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Desireé Vela-Lobedde</td>
+<td>La Calders</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Desireé Vela-Lobedde</td>
+<td>Campus</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Xevi Verdaguer</td>
+<td>Caixa D&#39;Eines</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Xevi Verdaguer</td>
+<td>Abacus Palau Robert</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Xevi Verdaguer</td>
+<td>Lamas</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Benji Verdes</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Benji Verdes</td>
+<td>Campus</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Benji Verdes</td>
+<td>Casa del Llibre Rambla</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Rocío Vidal</td>
+<td>Laie CCCB</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Rocío Vidal</td>
+<td>La Central Moritz</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Rocío Vidal</td>
+<td>Norma Cómics</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Andrea Vilallonga</td>
+<td>Fnac Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Manuel Vilas</td>
+<td>Maite Llibres</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Manuel Vilas</td>
+<td>La Central</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Manuel Vilas</td>
+<td>Llibreria Documenta</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Manuel Vilas</td>
+<td>Llibreria Jaimes</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Manuel Vilas</td>
+<td>Laie</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Xuan-Lan</td>
+<td>Natura Pelayo</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Xuan-Lan</td>
+<td>Bolibloc</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Santiago Lorenzo</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Santiago Lorenzo</td>
+<td>La Central</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Santiago Lorenzo</td>
+<td>La Central</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Santiago Lorenzo</td>
+<td>Casa del Llibre Passeig De Gràcia</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Santiago Lorenzo</td>
+<td>Blackie books</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Elisa Victoria</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Elisa Victoria</td>
+<td>La Central</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Elisa Victoria</td>
+<td>La Llama</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Elisa Victoria</td>
+<td>Casa del Llibre Passeig De Gràcia</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Elisa Victoria</td>
+<td>Laie CCCB</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Elisa Victoria</td>
+<td>Blackie books</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Miguel Noguera</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Miguel Noguera</td>
+<td>Casa del Llibre Rambla</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Miguel Noguera</td>
+<td>La Llama</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Miguel Noguera</td>
+<td>La Central Del Raval</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Miguel Noguera</td>
+<td>Laie CCCB</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Miguel Noguera</td>
+<td>Blackie books</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Marta Altés</td>
+<td>Casa del Llibre Rambla</td>
+<td>10:00-11:00</td>
+</tr>
+<tr>
+<td>Marta Altés</td>
+<td>La Central</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Marta Altés</td>
+<td>La Impossible</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Marta Altés</td>
+<td>Al·lots</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Marta Altés</td>
+<td>Casa Anita</td>
+<td>16:30-20:00</td>
+</tr>
+<tr>
+<td>Marta Altés</td>
+<td>Blackie books</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Milena Busquets</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Milena Busquets</td>
+<td>La Central</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Milena Busquets</td>
+<td>Abacus</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Milena Busquets</td>
+<td>Casa del Llibre Rambla</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Milena Busquets</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Milena Busquets</td>
+<td>La Impossible</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Kiko Amat</td>
+<td>La Central Del Raval</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Daniel Cassany</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Daniel Cassany</td>
+<td>La Central Moritz</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Eloy Fernández Porta</td>
+<td>Alibri</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Eloy Fernández Porta</td>
+<td>La Central Del Raval</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Eloy Fernández Porta</td>
+<td>Laie CCCB</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Eloy Fernández Porta</td>
+<td>Restaurante Karakala</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Jorge Herralde</td>
+<td>Laie Casp</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Jorge Herralde</td>
+<td>La Central</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Jorge Herralde</td>
+<td>Llibreria Documenta</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Albert Lladó</td>
+<td>Llibreria + Bernat</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Albert Lladó</td>
+<td>Taifa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Albert Lladó</td>
+<td>Laie CCCB</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Albert Lladó</td>
+<td>La Central Del Raval</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Albert Lladó</td>
+<td>La Calders</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Cristina Morales</td>
+<td>La Calders</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Cristina Morales</td>
+<td>Casa del Llibre Passeig De Gràcia</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Cristina Morales</td>
+<td>On the Road</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Cristina Morales</td>
+<td>Laie Casp</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Cristina Morales</td>
+<td>La Central</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Cristina Morales</td>
+<td>La Impossible</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Sergi Pàmies</td>
+<td>Abacus</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Sergi Pàmies</td>
+<td>La Impossible</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Sergi Pàmies</td>
+<td>La Central</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Sergi Pàmies</td>
+<td>Laie Casp</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Marcos Ordóñez</td>
+<td>Taifa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Marcos Ordóñez</td>
+<td>Laie Pedrera</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Marcos Ordóñez</td>
+<td>La Central</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Marcos Ordóñez</td>
+<td>Abacus Plaza Catalunya</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Sara Mesa</td>
+<td>Taifa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Sara Mesa</td>
+<td>Llibreria Documenta Parada</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Sara Mesa</td>
+<td>Casa del Llibre Rambla</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Sara Mesa</td>
+<td>La Central</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Sara Mesa</td>
+<td>La Impossible</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Sara Mesa</td>
+<td>Alibri</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Javier Pérez Andújar</td>
+<td>Taifa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Javier Pérez Andújar</td>
+<td>Atzavara</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Javier Pérez Andújar</td>
+<td>Llibreria Documenta</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Javier Pérez Andújar</td>
+<td>La Central</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Javier Pérez Andújar</td>
+<td>Laie</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Javier Pérez Andújar</td>
+<td>La Calders</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Paul B. Preciado</td>
+<td>Taifa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Paul B. Preciado</td>
+<td>On the Road</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Paul B. Preciado</td>
+<td>La Central</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Paul B. Preciado</td>
+<td>Llibreria Documenta Parada</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Paul B. Preciado</td>
+<td>La Calders</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Paul B. Preciado</td>
+<td>La Central Del Raval</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Paul B. Preciado</td>
+<td>Laie CCCB</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Toni Soler</td>
+<td>Atzavara</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Toni Soler</td>
+<td>La Central</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Toni Soler</td>
+<td>Abacus</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>David Trueba</td>
+<td>Laie Casp</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>David Trueba</td>
+<td>Alibri</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>David Trueba</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>David Trueba</td>
+<td>La Central</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>David Trueba</td>
+<td>Abacus</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Juan Pablo Villalobos</td>
+<td>Laie CCCB</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Juan Pablo Villalobos</td>
+<td>La Calders</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Juan Pablo Villalobos</td>
+<td>La Central Del Raval</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Juan Pablo Villalobos</td>
+<td>Taifa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Santiago Posteguillo</td>
+<td>Maite Llibres</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Santiago Posteguillo</td>
+<td>Abacus Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Santiago Posteguillo</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Santiago Posteguillo</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Santiago Posteguillo</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Santiago Posteguillo</td>
+<td>Casa del Llibre Rambla</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Santiago Posteguillo</td>
+<td>La Central</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Ayanta Barilli</td>
+<td>Maite Llibres</td>
+<td>11:00-12:01</td>
+</tr>
+<tr>
+<td>Ayanta Barilli</td>
+<td>Abacus Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ayanta Barilli</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Ayanta Barilli</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Ayanta Barilli</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Ayanta Barilli</td>
+<td>Casa del Llibre Rambla</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Ayanta Barilli</td>
+<td>La Central</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Eva García Sáenz de Urturi</td>
+<td>Abacus Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Eva García Sáenz de Urturi</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Eva García Sáenz de Urturi</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Eva García Sáenz de Urturi</td>
+<td>Casa del Llibre Rambla</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Eva García Sáenz de Urturi</td>
+<td>Caixa D&#39;Eines</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Eva García Sáenz de Urturi</td>
+<td>Alibri</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Eva García Sáenz de Urturi</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Fernando J. Múñez</td>
+<td>Maite Llibres</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Fernando J. Múñez</td>
+<td>El Corte Inglés Diagonal</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Fernando J. Múñez</td>
+<td>Casa del Llibre Rambla</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Fernando J. Múñez</td>
+<td>Fnac Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>María Dueñas</td>
+<td>Abacus Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>María Dueñas</td>
+<td>Alibri</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>María Dueñas</td>
+<td>Casa del Llibre Rambla</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>María Dueñas</td>
+<td>El Corte Inglés Portal de l&#39;Àngel</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>María Dueñas</td>
+<td>Universitària Ben Vil</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>María Dueñas</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Alice Kellen</td>
+<td>Campus</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Alice Kellen</td>
+<td>Universitària Ben Vil</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Alice Kellen</td>
+<td>Abacus Rambla</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Alice Kellen</td>
+<td>El Corte Inglés Portal de l&#39;Àngel</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Alice Kellen</td>
+<td>Alibri</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Alice Kellen</td>
+<td>Casa del Llibre Rambla</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Carlos Zanón</td>
+<td>Alibri</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Carlos Zanón</td>
+<td>Laie</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Carlos Zanón</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Carlos Zanón</td>
+<td>Abacus Rambla</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Carlos Zanón</td>
+<td>Casa del Llibre Rambla</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Carlos Zanón</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Carlos Zanón</td>
+<td>La Central del Raval</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Paloma Sánchez-Garnica</td>
+<td>Abacus Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Paloma Sánchez-Garnica</td>
+<td>Caixa D&#39;Eines</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Paloma Sánchez-Garnica</td>
+<td>Alibri</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Paloma Sánchez-Garnica</td>
+<td>Universitària Ben Vil</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Paloma Sánchez-Garnica</td>
+<td>El Corte Inglés Portal de l&#39;Àngel</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Paloma Sánchez-Garnica</td>
+<td>Fnac Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Blue Jeans</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Blue Jeans</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Blue Jeans</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Blue Jeans</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Blue Jeans</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Blue Jeans</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Clara Sánchez</td>
+<td>Abacus Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Clara Sánchez</td>
+<td>Laie Pedrera</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Clara Sánchez</td>
+<td>Casa del Llibre Rambla</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Clara Sánchez</td>
+<td>El Corte Inglés Portal de l&#39;Àngel</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Clara Sánchez</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Clara Sánchez</td>
+<td>La Central</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Javier Sierra</td>
+<td>Maite Llibres</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Javier Sierra</td>
+<td>Alibri</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Javier Sierra</td>
+<td>Fnac Illa</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Javier Sierra</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Javier Sierra</td>
+<td>La Central</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Javier Sierra</td>
+<td>Abacus Plaza Catalunya</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Marwan</td>
+<td>Alibri</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Marwan</td>
+<td>Alibri</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Marwan</td>
+<td>Abacus Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Marwan</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Marwan</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Marwan</td>
+<td>Casa del Llibre Rambla</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Jorge Molist</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Jorge Molist</td>
+<td>Abacus Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Jorge Molist</td>
+<td>Fnac Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Luis Ramiro</td>
+<td>Maite Llibres</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Luis Ramiro</td>
+<td>Llibreria Hernàndez</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Luis Ramiro</td>
+<td>Alibri</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Luis Ramiro</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Luis Ramiro</td>
+<td>Casa del Llibre Rambla</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Cristina López Barrio</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Cristina López Barrio</td>
+<td>Fnac Las Arenas</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Santi Balmes</td>
+<td>Casa del Llibre Rambla</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Santi Balmes</td>
+<td>Alibri</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Santi Balmes</td>
+<td>La Central del Raval</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Santi Balmes</td>
+<td>Abacus Plaza Catalunya</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Santi Balmes</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Santi Balmes</td>
+<td>Laie CCCB</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Boris Izaguirre</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Boris Izaguirre</td>
+<td>Abacus Palau Robert</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Boris Izaguirre</td>
+<td>Alibri</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Boris Izaguirre</td>
+<td>Fnac Illa</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Boris Izaguirre</td>
+<td>Caixa D&#39;Eines</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Berta Bernad</td>
+<td>El Corte Inglés Diagonal</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Berta Bernad</td>
+<td>Fnac Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Berta Bernad</td>
+<td>Abacus Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Berta Bernad</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Berta Bernad</td>
+<td>Campus</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Berta Bernad</td>
+<td>La Central Moritz</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Berta Bernad</td>
+<td>Alibri</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Pilar Eyre</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Pilar Eyre</td>
+<td>Maite Llibres</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Miri</td>
+<td>Campus</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Miri</td>
+<td>Abacus Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Miri</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Miri</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Miri</td>
+<td>La Central Moritz</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Miri</td>
+<td>Alibri</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Rut Nieves</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Rut Nieves</td>
+<td>Abacus Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Rut Nieves</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Rut Nieves</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Rut Nieves</td>
+<td>Campus</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Patry Jordan</td>
+<td>El Corte Inglés Portal de l&#39;Àngel</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Patry Jordan</td>
+<td>Casa del Llibre Rambla</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Patry Jordan</td>
+<td>Fnac Illa</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Patry Jordan</td>
+<td>Fnac Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Patry Jordan</td>
+<td>Abacus Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Sandra Sabatés </td>
+<td>La Central</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Sandra Sabatés </td>
+<td>El Corte Inglés Portal de l&#39;Àngel</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Sandra Sabatés </td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Leticia Dolera</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Leticia Dolera</td>
+<td>La Central Moritz</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Leticia Dolera</td>
+<td>Caixa D&#39;Eines</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Leticia Dolera</td>
+<td>Abacus Plaza Catalunya</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Leticia Dolera</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Leticia Dolera</td>
+<td>Alibri</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Jurado Bake Off ( Betina )</td>
+<td>Llibreria Hernàndez</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Jurado Bake Off ( Betina )</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Jurado Bake Off ( Betina )</td>
+<td>Abacus Plaza Catalunya</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Jurado Bake Off ( Betina )</td>
+<td>Fnac Illa</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Jurado Bake Off ( Betina )</td>
+<td>Fnac Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Juan Eslava Galán </td>
+<td>El Corte Inglés Diagonal</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Juan Eslava Galán </td>
+<td>Maite Llibres</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Juan Eslava Galán </td>
+<td>Fnac Illa</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Juan Eslava Galán </td>
+<td>Casa del Llibre Rambla</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Ana Guerra</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Ana Guerra</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ana Guerra</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Ana Guerra</td>
+<td>Fnac Illa</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Ana Guerra</td>
+<td>Fnac Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Ana Guerra</td>
+<td>Fnac Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Marián Rojas</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Marián Rojas</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Marián Rojas</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Marián Rojas</td>
+<td>Casa del Llibre Rambla</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Marián Rojas</td>
+<td>Casa del Llibre Rambla</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Marián Rojas</td>
+<td>Casa del Llibre Rambla</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Risto Mejide</td>
+<td>Casa del Llibre Rambla</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Risto Mejide</td>
+<td>Casa del Llibre Rambla</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Risto Mejide</td>
+<td>Casa del Llibre Rambla</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Risto Mejide</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Risto Mejide</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Risto Mejide</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Maestros Costura (caprile mª Escoté)</td>
+<td>El Corte Inglés Diagonal</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Maestros Costura (caprile mª Escoté)</td>
+<td>El Corte Inglés Diagonal</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Maestros Costura (caprile mª Escoté)</td>
+<td>El Corte Inglés Diagonal</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Maestros Costura (caprile mª Escoté)</td>
+<td>Fnac Illa</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Maestros Costura (caprile mª Escoté)</td>
+<td>Fnac Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Maestros Costura (caprile mª Escoté)</td>
+<td>Fnac Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Defreds- Jose Ángel Gómez Iglesias</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Defreds- Jose Ángel Gómez Iglesias</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Defreds- Jose Ángel Gómez Iglesias</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Defreds- Jose Ángel Gómez Iglesias</td>
+<td>Abacus Rambla</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Juan Manuel de Prada</td>
+<td>Caixa D&#39;Eines</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Juan Manuel de Prada</td>
+<td>Alibri</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Juan Manuel de Prada</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Juan Manuel de Prada</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Xavier Sardà</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Xavier Sardà</td>
+<td>Abacus Palau Robert</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Xavier Sardà</td>
+<td>Fnac Illa</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Xavier Sardà</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Xavier Sardà</td>
+<td>Casa del Llibre Rambla</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Juan del Val</td>
+<td>El Corte Inglés Diagonal</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Juan del Val</td>
+<td>Fnac Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Juan del Val</td>
+<td>Casa del Llibre Rambla</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Juan del Val</td>
+<td>El Corte Inglés Portal de l&#39;Àngel</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Mario Vaquerizo</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Mario Vaquerizo</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Mario Vaquerizo</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Mario Vaquerizo</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Mario Vaquerizo</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Mario Vaquerizo</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Maxim Huerta</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Maxim Huerta</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Maxim Huerta</td>
+<td>Fnac Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Maxim Huerta</td>
+<td>Abacus Palau Robert</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Maxim Huerta</td>
+<td>Abacus Palau Robert</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Maxim Huerta</td>
+<td>La Central Moritz</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Maxim Huerta</td>
+<td>La Central Moritz</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>César Brandon Ndjocu</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>César Brandon Ndjocu</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>César Brandon Ndjocu</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>César Brandon Ndjocu</td>
+<td>Casa del Llibre Rambla</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>César Brandon Ndjocu</td>
+<td>Casa del Llibre Rambla</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>César Brandon Ndjocu</td>
+<td>Casa del Llibre Rambla</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Masterchef Junior</td>
+<td>El Corte Inglés Diagonal</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Masterchef Junior</td>
+<td>Fnac Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Juan Ramón Lucas</td>
+<td>El Corte Inglés Diagonal</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Juan Ramón Lucas</td>
+<td>Fnac Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Manuel Valls</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Manuel Valls</td>
+<td>Casa del Llibre Rambla</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Manuel Valls</td>
+<td>Maite Llibres</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Manuel Valls</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Cristina Villanueva</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Cristina Villanueva</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Cristina Villanueva</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Carlos Gonzalez</td>
+<td>Abacus Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Carlos Gonzalez</td>
+<td>Fnac Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Carlos Gonzalez</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Carlos Gonzalez</td>
+<td>Maite Llibres</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Emilio del Río</td>
+<td>Campus</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Emilio del Río</td>
+<td>Fnac Illa</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Emilio del Río</td>
+<td>Alibri</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Emilio del Río</td>
+<td>Casa del Llibre Rambla</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Ernesto Ekaizer</td>
+<td>Fnac Illa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Ernesto Ekaizer</td>
+<td>Diari Ara</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Ernesto Ekaizer</td>
+<td>La Central</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Ernesto Ekaizer</td>
+<td>Laie Pedrera</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Ernesto Ekaizer</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Sara Soler</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Sara Soler</td>
+<td>La Central Moritz</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Carlos Sisí</td>
+<td>Fnac Illa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Carlos Sisí</td>
+<td>Gigamesh</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Carlos Sisí</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Carlos Sisí</td>
+<td>Casa del Llibre Rambla</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Eduardo Mendoza</td>
+<td>Abacus Rambla</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Eduardo Mendoza</td>
+<td>La Central</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Eduardo Mendoza</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Eduardo Mendoza</td>
+<td>Laie</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Enrique Vila-Matas</td>
+<td>La Central</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Enrique Vila-Matas</td>
+<td>La Central</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Enrique Vila-Matas</td>
+<td>Abacus Rambla</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Enrique Vila-Matas</td>
+<td>Laie</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Enrique Vila-Matas</td>
+<td>Laie</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Rosa Montero</td>
+<td>Abacus Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Rosa Montero</td>
+<td>Campus</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Rosa Montero</td>
+<td>Laie</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Rosa Montero</td>
+<td>Casa del Llibre Rambla</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Rosa Montero</td>
+<td>La Central</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Rosa Montero</td>
+<td>Somnegra</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Rosa Montero</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Elvira Sastre</td>
+<td>Caixa D&#39;Eines</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Elvira Sastre</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Elvira Sastre</td>
+<td>Abacus Palau Robert</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Elvira Sastre</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Elvira Sastre</td>
+<td>La Central</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Elvira Sastre</td>
+<td>Laie Pedrera</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Elvira Sastre</td>
+<td>Llibreria Documenta Parada</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Juan Vico</td>
+<td>Casa del Llibre Rambla</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Juan Vico</td>
+<td>Laie CCCB</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Juan Vico</td>
+<td>La Central</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Félix J. Palma</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Félix J. Palma</td>
+<td>Maite Llibres</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Félix J. Palma</td>
+<td>Casa del Llibre Rambla</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Félix J. Palma</td>
+<td>Abacus Palau Robert</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Félix J. Palma</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Félix J. Palma</td>
+<td>Alibri</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Pablo Carbonell</td>
+<td>Casa del Llibre Rambla</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Pablo Carbonell</td>
+<td>Caixa D&#39;Eines</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Pablo Carbonell</td>
+<td>Abacus Palau Robert</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Pablo Carbonell</td>
+<td>La Central Moritz</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Pablo Carbonell</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Pablo Carbonell</td>
+<td>El Corte Inglés Portal de l&#39;Àngel</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Pablo Carbonell</td>
+<td>Alibri</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Berna G. Harbour</td>
+<td>Laie Pedrera</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Berna G. Harbour</td>
+<td>Fnac Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Berna G. Harbour</td>
+<td>Somnegra</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Berna G. Harbour</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Berna G. Harbour</td>
+<td>Llibreria Hernàndez</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>María Oruña</td>
+<td>Fnac Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>María Oruña</td>
+<td>El Corte Inglés Diagonal</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>María Oruña</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>María Oruña</td>
+<td>Alibri</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>María Oruña</td>
+<td>Caixa D&#39;Eines</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>María Oruña</td>
+<td>La Central</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Fernando Aramburu</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Fernando Aramburu</td>
+<td>La Central</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Fernando Aramburu</td>
+<td>Laie</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Fernando Aramburu</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Fernando Aramburu</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Fernando Aramburu</td>
+<td>Casa del Llibre Rambla</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Almudena Grandes</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Almudena Grandes</td>
+<td>Abacus Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Almudena Grandes</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Almudena Grandes</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Almudena Grandes</td>
+<td>La Central</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Almudena Grandes</td>
+<td>Laie</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Eva Blanch</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Eva Blanch</td>
+<td>Laie Pedrera</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Eva Blanch</td>
+<td>La Central</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Éric Vuillard</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Éric Vuillard</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Éric Vuillard</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Éric Vuillard</td>
+<td>La Central</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Éric Vuillard</td>
+<td>Abacus Rambla</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Éric Vuillard</td>
+<td>Laie</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Megan Maxwell</td>
+<td>Fnac Illa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Megan Maxwell</td>
+<td>Fnac Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Megan Maxwell</td>
+<td>Fnac Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Megan Maxwell</td>
+<td>El Corte Inglés Diagonal</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Megan Maxwell</td>
+<td>El Corte Inglés Diagonal</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Tamara Gorro</td>
+<td>Fnac Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Tamara Gorro</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Alejandro Palomas</td>
+<td>El Corte Inglés Portal de l&#39;Àngel</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Alejandro Palomas</td>
+<td>Laie Pedrera</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Alejandro Palomas</td>
+<td>Abacus Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Alejandro Palomas</td>
+<td>La Central Moritz</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Alejandro Palomas</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Alejandro Palomas</td>
+<td>Caixa D&#39;Eines</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>David Martínez Álvarez. Rayden</td>
+<td>Fnac Illa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>David Martínez Álvarez. Rayden</td>
+<td>Fnac Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>David Martínez Álvarez. Rayden</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>David Martínez Álvarez. Rayden</td>
+<td>Caixa D&#39;Eines</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>David Martínez Álvarez. Rayden</td>
+<td>La Central Moritz</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>David Martínez Álvarez. Rayden</td>
+<td>Campus</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>David Martínez Álvarez. Rayden</td>
+<td>Casa del Llibre Rambla</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Lucía Galán</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Lucía Galán</td>
+<td>Fnac Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Lucía Galán</td>
+<td>Casa del Llibre Rambla</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Lucía Galán</td>
+<td>Llibreria Hernàndez</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Kaos</td>
+<td>Fnac Illa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Kaos</td>
+<td>Fnac Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Kaos</td>
+<td>Campus</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Kaos</td>
+<td>Abacus Plaza Catalunya</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Estelle Maskame</td>
+<td>El Corte Inglés Diagonal</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Estelle Maskame</td>
+<td>Llibreria Hernàndez</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Estelle Maskame</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Estelle Maskame</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Estelle Maskame</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Estelle Maskame</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Alejandra Remón</td>
+<td>Laie CCCB</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Alejandra Remón</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Alejandra Remón</td>
+<td>La Central Moritz</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Ricardo Cavolo</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Ricardo Cavolo</td>
+<td>Abacus Palau Robert</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Ricardo Cavolo</td>
+<td>La Central del Raval</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Ricardo Cavolo</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Laura Santolaya (p8ladas)</td>
+<td>La Central Moritz</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Laura Santolaya (p8ladas)</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Noemí Casquet</td>
+<td>Laie CCCB</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Noemí Casquet</td>
+<td>Fnac Illa</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Noemí Casquet</td>
+<td>La Central Moritz</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Esther Gili y Gema Camblor</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Esther Gili y Gema Camblor</td>
+<td>La Central Moritz</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Esther Gili y Gema Camblor</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Gino Rubert</td>
+<td>La Central Moritz</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Elisa Ancori</td>
+<td>La Central Moritz</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Tomás Navarro</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Tomás Navarro</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Àlex Rovira/ Frances Miralles</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Àlex Rovira/ Frances Miralles</td>
+<td>El Corte Inglés Portal de l&#39;Àngel</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Àlex Rovira/ Frances Miralles</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Albanta San Román</td>
+<td>Alibri</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Albanta San Román</td>
+<td>Llibreria Hernàndez</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Albanta San Román</td>
+<td>Fnac Illa</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Albanta San Román</td>
+<td>Maite Llibres</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Arantxa  Coca/J. J.  Spin</td>
+<td>Fnac Illa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Arantxa  Coca/J. J.  Spin</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Moderna de pueblo</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Moderna de pueblo</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Moderna de pueblo</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Moderna de pueblo</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>María Herreros</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>María Herreros</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>María Herreros</td>
+<td>Abacus Palau Robert</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>María Herreros</td>
+<td>Abacus Palau Robert</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>María Herreros</td>
+<td>La Central Moritz</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>María Herreros</td>
+<td>La Central Moritz</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Marc Massip</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Marc Massip</td>
+<td>La Central Moritz</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Jose Luis Gallego</td>
+<td>Fnac Las Arenas</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Álvaro Kruse</td>
+<td>Fnac Las Arenas</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Álvaro Kruse</td>
+<td>Fnac Las Arenas</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Joaquim Valls</td>
+<td>Fnac Las Arenas</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>David Meseguer</td>
+<td>Fnac Las Arenas</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>David Meseguer</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>David Meseguer</td>
+<td>Altaïr</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Sergi Vicente</td>
+<td>Fnac Las Arenas</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Sergi Vicente</td>
+<td>Altaïr</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Francesc Peirón</td>
+<td>Laie Pedrera</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Francesc Peirón</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Francesc Peirón</td>
+<td>Fnac Las Arenas</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Francesc Peirón</td>
+<td>Altaïr</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Choo Waihong</td>
+<td>Altaïr</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Lola García</td>
+<td>El Corte Inglés Diagonal</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Lola García</td>
+<td>Fnac Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Lola García</td>
+<td>Abacus Palau Robert</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Lola García</td>
+<td>Laie Pedrera</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Lola García</td>
+<td>La Central</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Lola García</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Xavier Aldekoa</td>
+<td>Llibreria + Bernat</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Xavier Aldekoa</td>
+<td>Altaïr</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Xavier Aldekoa</td>
+<td>Altaïr</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Xavier Aldekoa</td>
+<td>Revista 5W</td>
+<td>14:00-15:00</td>
+</tr>
+<tr>
+<td>Xavier Aldekoa</td>
+<td>La Central</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Xavier Aldekoa</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Xavier Aldekoa</td>
+<td>Abacus Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Xavier Aldekoa</td>
+<td>Fnac Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Xavier Moret</td>
+<td>Laie Pedrera</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Xavier Moret</td>
+<td>Altaïr</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Antoni Bayona</td>
+<td>Laie Pedrera</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Antoni Bayona</td>
+<td>Casa del Llibre Rambla</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Antoni Bayona</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Antoni Bayona</td>
+<td>Fnac Illa</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Antoni Bayona</td>
+<td>La Central</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Antoni Bayona</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Toni Muñoz</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Toni Muñoz</td>
+<td>Fnac Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Toni Muñoz</td>
+<td>Somnegra</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Miguel Durán </td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Miguel Durán </td>
+<td>Fnac Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Miguel Durán </td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Miguel Durán </td>
+<td>Campus</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Jaime Alguersuari</td>
+<td>Fnac Illa</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Jaime Alguersuari</td>
+<td>Alibri</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Jaime Alguersuari</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Francisca Serrano</td>
+<td>Fnac Las Arenas</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Francisca Serrano</td>
+<td>El Corte Inglés Diagonal</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Eduard Estivill</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Eduard Estivill</td>
+<td>Fnac Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Anxo Pérez</td>
+<td>Campus</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Anxo Pérez</td>
+<td>El Corte Inglés Diagonal</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Anxo Pérez</td>
+<td>El Corte Inglés Diagonal</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Anxo Pérez</td>
+<td>Fnac Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Joan López</td>
+<td>Fnac Las Arenas</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Joan López</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Mónica Mendoza</td>
+<td>Fnac Las Arenas</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Mónica Mendoza</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Cristina Inés</td>
+<td>Fnac Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Cristina Inés</td>
+<td>Abacus Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Eva Collado Durán</td>
+<td>Fnac Las Arenas</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Eva Collado Durán</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Neus Arqués</td>
+<td>El Corte Inglés Diagonal</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Mercè Vilarubias</td>
+<td>El Corte Inglés Diagonal</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Laura Chica</td>
+<td>El Corte Inglés Portal de l&#39;Àngel</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Francisco Alcaide</td>
+<td>El Corte Inglés Portal de l&#39;Àngel</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Pedro Baños</td>
+<td>Abacus Illa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Pedro Baños</td>
+<td>Fnac Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Pedro Baños</td>
+<td>El Corte Inglés Diagonal</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Pedro Baños</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Pedro Baños</td>
+<td>Universitària Ben Vil</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Óscar Vilarroya</td>
+<td>La Central Moritz</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Óscar Vilarroya</td>
+<td>Fnac Las Arenas</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Ignacio Latorre</td>
+<td>Maite Llibres</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Ignacio Latorre</td>
+<td>El Corte Inglés Diagonal</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Ignacio Latorre</td>
+<td>Fnac Las Arenas</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Gregorio Luri</td>
+<td>Laie</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Gregorio Luri</td>
+<td>Fnac Illa</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Gregorio Luri</td>
+<td>Abacus Illa</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Gregorio Luri</td>
+<td>La Central</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Paz Velasco</td>
+<td>Campus</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Paz Velasco</td>
+<td>Fnac Las Arenas</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Paz Velasco</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Sergio Mora </td>
+<td>Abacus Plaza Catalunya</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Sergio Mora </td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Sergio Mora </td>
+<td>La Central del Raval</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Sergio Mora </td>
+<td>Laie CCCB</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Sergio Mora </td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Aitor Sánchez</td>
+<td>Campus</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Aitor Sánchez</td>
+<td>Fnac Illa</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Aitor Sánchez</td>
+<td>Maite Llibres</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Aitor Sánchez</td>
+<td>El Corte Inglés Diagonal</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Lucía Martínez</td>
+<td>Campus</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Lucía Martínez</td>
+<td>Fnac Illa</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Lucía Martínez</td>
+<td>Maite Llibres</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Lucía Martínez</td>
+<td>El Corte Inglés Diagonal</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Carlos Ríos</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Carlos Ríos</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Carlos Ríos</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Carlos Ríos</td>
+<td>Abacus Rambla</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Carlos Ríos</td>
+<td>Abacus Rambla</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Carlos Ríos</td>
+<td>Abacus Rambla</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Carme Ruscalleda</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Carme Ruscalleda</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Carme Ruscalleda</td>
+<td>La Central Moritz</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Jodi Roca</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Miquel Brossa</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Miquel Brossa</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Isaac Petràs</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Isaac Petràs</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Rafel Nadal</td>
+<td>Casa del Llibre Rambla</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Rafel Nadal</td>
+<td>Abacus Rambla</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Rafel Nadal</td>
+<td>La Central</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Rafel Nadal</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Rafel Nadal</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Rafel Nadal</td>
+<td>Laie</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Rafel Nadal</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Rafel Nadal</td>
+<td>La Impossible</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Sílvia Soler</td>
+<td>Diari Ara</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Sílvia Soler</td>
+<td>La Central</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Sílvia Soler</td>
+<td>La Impossible</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Sílvia Soler</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Sílvia Soler</td>
+<td>Abacus Plaza Catalunya</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Sílvia Soler</td>
+<td>Llibreria Documenta</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Sílvia Soler</td>
+<td>Laie</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Sílvia Soler</td>
+<td>Casa del Llibre Rambla</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Gerard Quintana</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Gerard Quintana</td>
+<td>Abacus Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Gerard Quintana</td>
+<td>Laie</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Gerard Quintana</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Gerard Quintana</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Gerard Quintana</td>
+<td>Casa del Llibre Rambla</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Gerard Quintana</td>
+<td>Alibri</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Gerard Quintana</td>
+<td>La Central</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Maria Jesús Comellas</td>
+<td>Abacus Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Maria Jesús Comellas</td>
+<td>Alibri</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Maria Jesús Comellas</td>
+<td>La Central Moritz</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Maria Jesús Comellas</td>
+<td>La Impossible</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Maria Jesús Comellas</td>
+<td>Fnac Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Maria Jesús Comellas</td>
+<td>El Corte Inglés Diagonal</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Ramon Gasch/Teresa Sagrera</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Christian Escribà/Sílvia Tarragó</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Christian Escribà/Sílvia Tarragó</td>
+<td>Abacus Palau Robert</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Christian Escribà/Sílvia Tarragó</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Núria Picas</td>
+<td>Fnac Illa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Núria Picas</td>
+<td>Abacus Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Núria Picas</td>
+<td>Maite Llibres</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Núria Picas</td>
+<td>La Impossible</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Núria Picas</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Jordi Campoy</td>
+<td>Sabadell</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Jordi Campoy</td>
+<td>La Central Moritz</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Jordi Campoy</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Jordi Campoy</td>
+<td>Alibri</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Jordi Campoy</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Maria Barbal</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Maria Barbal</td>
+<td>Llibreria Documenta</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Maria Barbal</td>
+<td>Abacus Rambla</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Maria Barbal</td>
+<td>La Central</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Maria Barbal</td>
+<td>Laie</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Maria Barbal</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Maria Barbal</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Maria Barbal</td>
+<td>La Impossible</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Maria Carme Roca</td>
+<td>La Central</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Maria Carme Roca</td>
+<td>Abacus Palau Robert</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Maria Carme Roca</td>
+<td>La Impossible</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Maria Carme Roca</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Maria Carme Roca</td>
+<td>Maite Llibres</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Maria Carme Roca</td>
+<td>Fnac Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Victor Amela</td>
+<td>Fnac Illa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Victor Amela</td>
+<td>Llibreria + Bernat</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Victor Amela</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Victor Amela</td>
+<td>Laie Pedrera</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Victor Amela</td>
+<td>Abacus Plaza Catalunya</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Victor Amela</td>
+<td>El Corte Inglés Portal de l&#39;Àngel</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Victor Amela</td>
+<td>La Central</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Victor Amela</td>
+<td>Caixa d&#39;Eines</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Care Santos</td>
+<td>La Central</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Care Santos</td>
+<td>Caixa d&#39;Eines</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Care Santos</td>
+<td>Abacus Plaza Catalunya</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Care Santos</td>
+<td>La Impossible</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Care Santos</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Care Santos</td>
+<td>Laie Pedrera</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Maria Xinxó</td>
+<td>Abacus Illa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Maria Xinxó</td>
+<td>Fnac Las Arenas</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Jaume Funes</td>
+<td>Abacus Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Jaume Funes</td>
+<td>Casa del Llibre Rambla</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Jaume Funes</td>
+<td>La Central Moritz</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Jaume Funes</td>
+<td>Fnac Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Jaume Funes</td>
+<td>El Corte Inglés Diagonal</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Martí Gironell</td>
+<td>La Central Moritz</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Martí Gironell</td>
+<td>Fnac Illa</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Martí Gironell</td>
+<td>El Corte Inglés Diagonal</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Martí Gironell</td>
+<td>Abacus Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Martí Gironell</td>
+<td>Maite Llibres</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Joan Roca</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>César Brandon</td>
+<td>Fnac Triangle</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>César Brandon</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>César Brandon</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>César Brandon</td>
+<td>Casa del Llibre Rambla</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>César Brandon</td>
+<td>Casa del Llibre Rambla</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>César Brandon</td>
+<td>Casa del Llibre Rambla</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Marc Artigau</td>
+<td>Diari Ara</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Marc Artigau</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Marc Artigau</td>
+<td>Abacus Rambla</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Marc Artigau</td>
+<td>Fnac Triangle</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Marc Artigau</td>
+<td>Caixa d&#39;Eines</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Marc Artigau</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Marc Artigau</td>
+<td>Laie</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Marc Artigau</td>
+<td>La Central</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Borja de Riquer</td>
+<td>La Impossible</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Borja de Riquer</td>
+<td>Caixa d&#39;Eines</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Borja de Riquer</td>
+<td>Llibreria Documenta</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Borja de Riquer</td>
+<td>La Central</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Borja de Riquer</td>
+<td>Laie</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Albert Casals</td>
+<td>El Corte Inglés Portal de l&#39;Àngel</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Albert Casals</td>
+<td>La Central Moritz</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Albert Casals</td>
+<td>Abacus Palau Robert</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Albert Casals</td>
+<td>Alibri</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Albert Casals</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Albert Casals</td>
+<td>Campus</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Albert Casals</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Gemma Lienas</td>
+<td>Abacus Rambla</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Gemma Lienas</td>
+<td>BBVA</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Gemma Lienas</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Gemma Lienas</td>
+<td>Laie Pedrera</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Gemma Lienas</td>
+<td>Alibri</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Gemma Lienas</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Gemma Lienas</td>
+<td>La Central</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Santi Baró</td>
+<td>Fnac Illa</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Santi Baró</td>
+<td>Abacus Illa</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Santi Baró</td>
+<td>Maite Llibres</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Santi Baró</td>
+<td>El Corte Inglés Diagonal</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Àngels Bassas</td>
+<td>Fnac Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Àngels Bassas</td>
+<td>Maite Llibres</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Àngels Bassas</td>
+<td>Laie Pedrera</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Àngels Bassas</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Àngels Bassas</td>
+<td>La Impossible</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Àngels Bassas</td>
+<td>La Central</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Anna Monreal</td>
+<td>Fnac Las Arenas</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Anna Monreal</td>
+<td>La Central Moritz</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Marta Batallé</td>
+<td>Fnac Las Arenas</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Marta Batallé</td>
+<td>La Central Moritz</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Marta Batallé</td>
+<td>Abacus Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Sebastià Portell</td>
+<td>Llibreria Documenta</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Sebastià Portell</td>
+<td>Còmplices</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Sebastià Portell</td>
+<td>Alibri</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Sebastià Portell</td>
+<td>La Impossible</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Sebastià Portell</td>
+<td>La Petonada</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Sebastià Portell</td>
+<td>Abacus Rambla</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Damià Bardera</td>
+<td>Laie CCCB</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Damià Bardera</td>
+<td>La Central Moritz</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Damià Bardera</td>
+<td>La Impossible</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Damià Bardera</td>
+<td>Fnac Las Arenas</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Damià Bardera</td>
+<td>Abacus Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Manuel Cuyàs</td>
+<td>La Central</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Manuel Cuyàs</td>
+<td>La Impossible</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Manuel Cuyàs</td>
+<td>Abacus Palau Robert</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Manuel Cuyàs</td>
+<td>Campus</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Manuel Cuyàs</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Manuel Cuyàs</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>J.M. Tresserras / E. Marín</td>
+<td>La Impossible</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>J.M. Tresserras / E. Marín</td>
+<td>La Central Moritz</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>J.M. Tresserras / E. Marín</td>
+<td>Diari Ara</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>J.M. Tresserras / E. Marín</td>
+<td>ERC Barcelona</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>J.M. Tresserras / E. Marín</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>J.M. Tresserras / E. Marín</td>
+<td>Abacus Palau Robert</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>J.M. Tresserras / E. Marín</td>
+<td>Llibreria Documenta</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Jaume Collboni</td>
+<td>Casa del Llibre Passeig de Gràcia</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Jaume Collboni</td>
+<td>La Central Moritz</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Jaume Collboni</td>
+<td>PSC Barcelona</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Jaume Collboni</td>
+<td>Fnac Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Jaume Collboni</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Vicenç Villatoro</td>
+<td>Llibreria Documenta</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Vicenç Villatoro</td>
+<td>Abacus Palau Robert</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Vicenç Villatoro</td>
+<td>Diari Ara</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Vicenç Villatoro</td>
+<td>La Central</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Vicenç Villatoro</td>
+<td>Fnac Illa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Vicenç Villatoro</td>
+<td>El Corte Inglés Diagonal</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Ramon Solsona</td>
+<td>Maite Llibres</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Ramon Solsona</td>
+<td>La Central Moritz</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ramon Solsona</td>
+<td>Caixa d&#39;Eines</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Ramon Solsona</td>
+<td>Laie Pedrera</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Ramon Solsona</td>
+<td>Universitària Ben Vil</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Ramon Solsona</td>
+<td>La Central</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Ramon Solsona</td>
+<td>Llibreria Documenta</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Carles Casajuana</td>
+<td>Laie</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Carles Casajuana</td>
+<td>Llibreria + Bernat</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Carles Casajuana</td>
+<td>Fnac Illa</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Carles Casajuana</td>
+<td>El Corte Inglés Diagonal</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Carles Casajuana</td>
+<td>Llibreria Hernàndez</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Víctor Garcia Tur</td>
+<td>La Calders</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Víctor Garcia Tur</td>
+<td>Òmnium</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Víctor Garcia Tur</td>
+<td>Laie CCCB</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Víctor Garcia Tur</td>
+<td>La Central</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Víctor Garcia Tur</td>
+<td>Abacus Rambla</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Víctor Garcia Tur</td>
+<td>La Impossible</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Carles Rebassa</td>
+<td>La Central Moritz</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Carles Rebassa</td>
+<td>La Impossible</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Carles Rebassa</td>
+<td>Laie CCCB</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>David Cirici</td>
+<td>Abacus Plaza Catalunya</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>David Cirici</td>
+<td>La Central</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>David Cirici</td>
+<td>El Corte Inglés Francesc Macià</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Melcior Comes</td>
+<td>Òmnium</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Melcior Comes</td>
+<td>La Central Moritz</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Melcior Comes</td>
+<td>Laie</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Melcior Comes</td>
+<td>Llibreria Documenta</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Joan Margarit</td>
+<td>La Central</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Jaume Cabré</td>
+<td>Òmnium</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Jaume Cabré</td>
+<td>Òmnium</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Jenn Díaz</td>
+<td>Òmnium</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Jordi Folck</td>
+<td>Fnac Las Arenas</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Laia Aguilar</td>
+<td>Fnac Las Arenas</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Pilarín Vallés</td>
+<td>Abacus Rambla</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Pilarín Vallés</td>
+<td>El Corte Inglés Portal de l&#39;Àngel</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Ramón Portell</td>
+<td>Abacus Plaza Catalunya</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Ramón Portell</td>
+<td>Al·lots</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Mª Merce Roca</td>
+<td>Alibri</td>
+<td>10:00-11:00</td>
+</tr>
+<tr>
+<td>Mª Merce Roca</td>
+<td>Abacus Plaza Catalunya</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Rubén Montañà</td>
+<td>Abacus Illa</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Oscar Sardà</td>
+<td>Campus</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Oscar Sardà</td>
+<td>Abacus Plaza Catalunya</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Miriam Fernández</td>
+<td>Casa Del Llibre Passeig De Gràcia</td>
+<td>10:00-11:00</td>
+</tr>
+<tr>
+<td>Miriam Fernández</td>
+<td>Abacus Palau Robert</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Miriam Fernández</td>
+<td>Fnac Las Arenas</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Isasaweis</td>
+<td>Casa Del Llibre Rambla</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Isasaweis</td>
+<td>El Corte Inglés Diagonal</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Isasaweis</td>
+<td>Abacus Plaza Catalunya</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Isasaweis</td>
+<td>Fnac Triangle</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Isasaweis</td>
+<td>Telefónica</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Fabián León</td>
+<td>Alibri</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Fabián León</td>
+<td>Fnac Las Arenas</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Fabián León</td>
+<td>Santos Ochoa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Beatriz Urigoitia</td>
+<td>Alibri</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Beatriz Urigoitia</td>
+<td>El Corte Inglés Diagonal</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Beatriz Urigoitia</td>
+<td>Fnac Las Arenas</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Pamela Sánchez</td>
+<td>Campus</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Pamela Sánchez</td>
+<td>Alibri</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Pamela Sánchez</td>
+<td>Fnac Las Arenas</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Pamela Sánchez</td>
+<td>Santos Ochoa</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Marcos Vázquez</td>
+<td>Fnac Las Arenas</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Marcos Vázquez</td>
+<td>Santos Ochoa</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Marcos Vázquez</td>
+<td>Alibri</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Luis Enrique Arrospide</td>
+<td>Campus</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Anna Fité</td>
+<td>Col·legi de Periodistes</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Beth Rodergas</td>
+<td>Casa Del Llibre Rambla</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Beth Rodergas</td>
+<td>Fnac Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Beth Rodergas</td>
+<td>Abacus Rambla</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Beth Rodergas</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Beth Rodergas</td>
+<td>El Corte Inglés Plaza Catalunya</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>David Monteagudo</td>
+<td>La Impossible</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>David Monteagudo</td>
+<td>La Central Moritz</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Eva Piquer</td>
+<td>Casa Del Llibre Passeig De Gràcia</td>
+<td>10:00-11:00</td>
+</tr>
+<tr>
+<td>Eva Piquer</td>
+<td>La Impossible</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Eva Piquer</td>
+<td>Fnac Illa</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Francesc Miralles</td>
+<td>Fnac Illa</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Francesc Miralles</td>
+<td>La Central Moritz</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Francesc Miralles</td>
+<td>Alibri</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Francesc Miralles</td>
+<td>Lamas</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Jordi Cabré</td>
+<td>Fnac Illa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Jordi Cabré</td>
+<td>Abacus Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Jordi Cabré</td>
+<td>Casa Del Llibre Rambla</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Jordi Cabré</td>
+<td>Laie Casp</td>
+<td>14:00-15:00</td>
+</tr>
+<tr>
+<td>Jordi Cabré</td>
+<td>La Crida</td>
+<td>15:00-16:00</td>
+</tr>
+<tr>
+<td>Jordi Cabré</td>
+<td>La Central</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Jordi Cabré</td>
+<td>Òmnium</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Jordi Cabré</td>
+<td>Fnac Triangle</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Jordi Cabré</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Júlia Bertran</td>
+<td>La Calders</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Júlia Bertran</td>
+<td>La Central Moritz</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Laia López (il·lustradora de Mystical)</td>
+<td>Abacus Plaza Catalunya</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Laia López (il·lustradora de Mystical)</td>
+<td>Abacus Plaza Catalunya</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Laia López (il·lustradora de Mystical)</td>
+<td>Abacus Plaza Catalunya</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Maite Carranza</td>
+<td>Casa Del Llibre Rambla</td>
+<td>10:00-11:00</td>
+</tr>
+<tr>
+<td>Maite Carranza</td>
+<td>Abacus Rambla</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Maite Carranza</td>
+<td>La Impossible</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Mònica Usart</td>
+<td>El Corte Inglés Diagonal</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Mònica Usart</td>
+<td>La Central Moritz</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Mònica Usart</td>
+<td>Casa Del Llibre Passeig De Gràcia</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Mònica Usart</td>
+<td>Abacus Plaza Catalunya</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Natàlia Cerezo</td>
+<td>Casa del Llibre Terrassa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Natàlia Cerezo</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Natàlia Cerezo</td>
+<td>Abacus Palau Robert</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Núria Franquet</td>
+<td>Abacus Rambla</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Núria Franquet</td>
+<td>Fnac Triangle</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Núria Franquet</td>
+<td>La Impossible</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Núria Franquet</td>
+<td>Fnac Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Roser Calafell</td>
+<td>Fnac Triangle</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Roser Calafell</td>
+<td>Abacus Palau Robert</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Salvador Macip</td>
+<td>Fnac Illa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Salvador Macip</td>
+<td>La Central Moritz</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Salvador Macip</td>
+<td>Fnac Triangle</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Sandra de la Cruz</td>
+<td>Casa Del Llibre Passeig De Gràcia</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Marta Orriols</td>
+<td>Alibri</td>
+<td>10:00-11:00</td>
+</tr>
+<tr>
+<td>Marta Orriols</td>
+<td>La Calders</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Marta Orriols</td>
+<td>Laie Casp</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Marta Orriols</td>
+<td>La Impossible</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Marta Orriols</td>
+<td>La Central</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Marta Orriols</td>
+<td>Llibreria Documenta Parada</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Marta Orriols</td>
+<td>Òmnium</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Marta Orriols</td>
+<td>Altaïr</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Joan Benesiu</td>
+<td>Alibri</td>
+<td>10:00-11:00</td>
+</tr>
+<tr>
+<td>Joan Benesiu</td>
+<td>La Calders</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Joan Benesiu</td>
+<td>La Impossible</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Joan Benesiu</td>
+<td>Altaïr</td>
+<td>15:00-16:00</td>
+</tr>
+<tr>
+<td>Joan Benesiu</td>
+<td>La Central</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Joan Benesiu</td>
+<td>Llibreria Documenta Parada</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Joan Benesiu</td>
+<td>Laie</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Mia Couto</td>
+<td>La Central</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Mia Couto</td>
+<td>Altaïr</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Mia Couto</td>
+<td>Laie Pedrera</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>John Carlin y Oriol Malet</td>
+<td>Llibreria + Bernat</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>John Carlin y Oriol Malet</td>
+<td>Comanegra Parada</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>John Carlin y Oriol Malet</td>
+<td>Casa Del Llibre Rambla</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Toni Galmés y M. Àngels Cabré</td>
+<td>Alibri</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Toni Galmés y M. Àngels Cabré</td>
+<td>Abacus Plaza Catalunya</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Toni Galmés y M. Àngels Cabré</td>
+<td>Còmplices</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Toni Galmés y M. Àngels Cabré</td>
+<td>La Central Moritz</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Toni Galmés y M. Àngels Cabré</td>
+<td>Comanegra Parada</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Toni Galmés y M. Àngels Cabré</td>
+<td>Casa Del Llibre Passeig De Gràcia</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Gemma Sardà</td>
+<td>La Calders</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Gemma Sardà</td>
+<td>Abacus Palau Robert</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Gemma Sardà</td>
+<td>Comanegra Parada</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Gemma Sardà</td>
+<td>Llibreria + Bernat</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Mar Bosch</td>
+<td>La Central Moritz</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Mar Bosch</td>
+<td>Comanegra Parada</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Miquel de Palol</td>
+<td>Laie Pedrera</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Joan de Déu Prats y Maria Padilla</td>
+<td>Fnac Illa</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Joan de Déu Prats y Maria Padilla</td>
+<td>Tòmiris</td>
+<td>12:30-13:30</td>
+</tr>
+<tr>
+<td>Joan de Déu Prats y Maria Padilla</td>
+<td>Abacus Palau Robert</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Joan de Déu Prats y Maria Padilla</td>
+<td>Comanegra Parada</td>
+<td>20:00-21:00</td>
+</tr>
+<tr>
+<td>Núria Perpinyà</td>
+<td>Comanegra Parada</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Núria Perpinyà</td>
+<td>Abacus Lleida</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Núria Perpinyà</td>
+<td>Llibreria Caselles</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Arnau Puig</td>
+<td>Comanegra Parada</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Joan-Pere Viladecans</td>
+<td>Comanegra Parada</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Roser Amills</td>
+<td>Comanegra Parada</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Roser Amills</td>
+<td>La Calders</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Roser Amills</td>
+<td>La Central Moritz</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Roser Amills</td>
+<td>Llibreria Lata Peinada</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Roser Amills</td>
+<td>Hotel Yurbban</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Àngel Juez</td>
+<td>Pare Manel 1</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Àngel Juez</td>
+<td>Pare Manel 2</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Eva Espinet</td>
+<td>Comanegra Parada</td>
+<td>16:00-17:00</td>
+</tr>
+<tr>
+<td>Magí Camps</td>
+<td>Llibreria + Bernat</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Toni Batllori</td>
+<td>Llibreria + Bernat</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Toni Batllori</td>
+<td>Llibreria + Bernat</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Miquel Molina</td>
+<td>Llibreria + Bernat</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Jordi Basté</td>
+<td>Llibreria + Bernat</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Jordi Basté</td>
+<td>Llibreria + Bernat</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Luis Racionero</td>
+<td>Llibreria + Bernat</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Juan Antonio March</td>
+<td>Llibreria + Bernat</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Juan Antonio March</td>
+<td>Llibreria + Bernat</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Eduardo Martín de Pozuelo</td>
+<td>Llibreria + Bernat</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Joan Carles Trallero</td>
+<td>Llibreria + Bernat</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Josep Playà</td>
+<td>Llibreria + Bernat</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Xavier Ayen</td>
+<td>Llibreria + Bernat</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Joaquin Luna</td>
+<td>Llibreria + Bernat</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Jaume Collell</td>
+<td>Llibreria + Bernat</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Marius Carol</td>
+<td>Llibreria + Bernat</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Toni Muñoz</td>
+<td>Llibreria + Bernat</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ada Castells</td>
+<td>Llibreria + Bernat</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Josep Antoni Duran Lleida</td>
+<td>Llibreria + Bernat</td>
+<td>12:00-12:30</td>
+</tr>
+<tr>
+<td>Lola García</td>
+<td>Llibreria + Bernat</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Carles Casajoana</td>
+<td>Llibreria + Bernat</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Sergio Vila-San Juan</td>
+<td>Llibreria + Bernat</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Suso Pérez</td>
+<td>Llibreria + Bernat</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Carina Farreras</td>
+<td>Llibreria + Bernat</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Juan José Caballero</td>
+<td>Llibreria + Bernat</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Arturo San agustín</td>
+<td>Llibreria + Bernat</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Pablo Foncillas</td>
+<td>Llibreria + Bernat</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Oriol Malet</td>
+<td>Llibreria + Bernat</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Luis Benvenuty</td>
+<td>Llibreria + Bernat</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Francesc Peirón</td>
+<td>Llibreria + Bernat</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Àngel Casas</td>
+<td>Llibreria + Bernat</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Xavi Casinos</td>
+<td>Llibreria + Bernat</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Jacobo Bergareche</td>
+<td>Llibreria + Bernat</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Ramón Lobo</td>
+<td>Llibreria Jaimes</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ramón Lobo</td>
+<td>Laie Pedrera</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Ramón Lobo</td>
+<td>Altaïr</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Ramón Lobo</td>
+<td>La Central Del Raval</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Ramón Lobo</td>
+<td>Fnac Illa</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Ada Castells </td>
+<td>Llibreria Obaga Parada</td>
+<td>11:00-12:00</td>
+</tr>
+<tr>
+<td>Ada Castells </td>
+<td>Llibreria + Bernat</td>
+<td>12:00-13:00</td>
+</tr>
+<tr>
+<td>Ada Castells </td>
+<td>Llibreria Jaimes</td>
+<td>13:00-14:00</td>
+</tr>
+<tr>
+<td>Ada Castells </td>
+<td>Abacus Palau Robert</td>
+<td>17:00-18:00</td>
+</tr>
+<tr>
+<td>Ada Castells </td>
+<td>Laie</td>
+<td>18:00-19:00</td>
+</tr>
+<tr>
+<td>Ada Castells </td>
+<td>La Impossible</td>
+<td>19:00-20:00</td>
+</tr>
+<tr>
+<td>Ada Castells </td>
+<td>La Central</td>
+<td>20:00-21:00</td>
+</tr>
+</tbody></table>
